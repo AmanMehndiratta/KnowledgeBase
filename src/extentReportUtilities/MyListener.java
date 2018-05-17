@@ -66,7 +66,9 @@ public class MyListener implements ITestListener {
 		driver = new FirefoxDriver(); // Set the drivers path in environment
 										// variables to avoid
 										// code(System.setProperty())
+		
 		reports = new ExtentReports(new SimpleDateFormat("yyyy-MM-dd hh-mm-ss-ms").format(new Date()) + "reports.html");
+		reports.loadConfig(new File(System.getProperty("user.dir") + "//ExtentReport.xml"));
 	}
 
 	public void onFinish(ITestContext context) {

@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="77099" started-at="2018-05-17T20:36:40Z" finished-at="2018-05-17T20:37:57Z">
+  <suite name="Suite" duration-ms="81014" started-at="2018-05-17T20:45:39Z" finished-at="2018-05-17T20:47:00Z">
     <groups>
     </groups>
-    <test name="KB Login Test" duration-ms="77099" started-at="2018-05-17T20:36:40Z" finished-at="2018-05-17T20:37:57Z">
+    <test name="KB Login Test" duration-ms="81014" started-at="2018-05-17T20:45:39Z" finished-at="2018-05-17T20:47:00Z">
       <class name="testSuit.KnowledgeBaseLoginTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="setupTest" is-config="true" duration-ms="15181" started-at="2018-05-18T02:06:51Z" finished-at="2018-05-18T02:07:06Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="setupTest" is-config="true" duration-ms="14319" started-at="2018-05-18T02:15:55Z" finished-at="2018-05-18T02:16:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="testHomePageTabSwitching()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="testHomePageTabSwitching" duration-ms="14" started-at="2018-05-18T02:07:06Z" finished-at="2018-05-18T02:07:06Z">
+        <test-method status="PASS" signature="testHomePageTabSwitching()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="testHomePageTabSwitching" duration-ms="13" started-at="2018-05-18T02:16:10Z" finished-at="2018-05-18T02:16:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageTabSwitching -->
-        <test-method status="PASS" signature="testLoginWithValidCredentialsInMobiControl()[pri:1, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="testLoginWithValidCredentialsInMobiControl" duration-ms="16506" started-at="2018-05-18T02:07:06Z" finished-at="2018-05-18T02:07:23Z">
+        <test-method status="PASS" signature="testLoginWithValidCredentialsInMobiControl()[pri:1, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="testLoginWithValidCredentialsInMobiControl" duration-ms="15592" started-at="2018-05-18T02:16:10Z" finished-at="2018-05-18T02:16:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithValidCredentialsInMobiControl -->
-        <test-method status="PASS" signature="testLoginWithInvalidCrerdentialsInMobicontrol()[pri:2, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="testLoginWithInvalidCrerdentialsInMobicontrol" duration-ms="18973" started-at="2018-05-18T02:07:23Z" finished-at="2018-05-18T02:07:42Z">
+        <test-method status="PASS" signature="testLoginWithInvalidCrerdentialsInMobicontrol()[pri:2, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="testLoginWithInvalidCrerdentialsInMobicontrol" duration-ms="19252" started-at="2018-05-18T02:16:25Z" finished-at="2018-05-18T02:16:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCrerdentialsInMobicontrol -->
-        <test-method status="PASS" signature="testExistenceOfFeedbackButton()[pri:3, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="testExistenceOfFeedbackButton" duration-ms="15028" started-at="2018-05-18T02:07:42Z" finished-at="2018-05-18T02:07:57Z">
+        <test-method status="PASS" signature="testExistenceOfFeedbackButton()[pri:3, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="testExistenceOfFeedbackButton" duration-ms="15008" started-at="2018-05-18T02:16:45Z" finished-at="2018-05-18T02:17:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExistenceOfFeedbackButton -->
-        <test-method status="PASS" signature="testHomePageTitle()[pri:4, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="testHomePageTitle" duration-ms="233" started-at="2018-05-18T02:07:57Z" finished-at="2018-05-18T02:07:57Z">
+        <test-method status="PASS" signature="testHomePageTitle()[pri:4, instance:testSuit.KnowledgeBaseLoginTest@31ef45e3]" name="testHomePageTitle" duration-ms="163" started-at="2018-05-18T02:17:00Z" finished-at="2018-05-18T02:17:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageTitle -->

@@ -40,9 +40,10 @@ public class KnowledgeBaseLoginTest extends MyListener {
 			// report.generateReport();
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/utilities/OR.properties");
 			prop.load(fis);
-			//test.log(LogStatus.INFO, "Browser Launched");
+			
 			driver.get(prop.getProperty("testSiteURL"));
-			//test.log(LogStatus.INFO, "Test URL Launched");
+			
+			//initialize all the elements of all the pages
 			 hp = PageFactory.initElements(driver, HomePage.class);
 			
 
@@ -86,7 +87,7 @@ public class KnowledgeBaseLoginTest extends MyListener {
 				test.log(LogStatus.PASS, "Feedback button exists");
 				
 			}else{
-				test.log(LogStatus.FAIL, "Feedback button not found and following error was caught");
+				test.log(LogStatus.FAIL, "Feedback button not found");
 
 			}
 				
