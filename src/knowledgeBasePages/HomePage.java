@@ -37,7 +37,9 @@ public class HomePage {
 		utilityFunctions.waitForElementToBeClickable(driver, Locators.loginButton);
 		loginButton.click();
 		loginWithMobiControl.click();
+		utilityFunctions.waitForElementToBeClickable(driver, Locators.mobiControlEnterEmail);
 		mobiControlEnterEmail.sendKeys(username);
+		
 		mobiControlEnterPassword.sendKeys(password);
 		mobiControlLoginButton.click();
 		try {

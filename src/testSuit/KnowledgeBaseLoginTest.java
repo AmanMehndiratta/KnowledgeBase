@@ -4,36 +4,31 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import extentReportUtilities.MyListener;
 import knowledgeBasePages.HomePage;
 import testData.TestData;
 import utilities.ExtentReport;
-import utilities.ExtentReportUtility;
 import utilities.Locators;
 import utilities.utilityFunctions;
 
-@Listeners(extentReportUtilities.TestListener.class)
+//@Listeners(extentReportUtilities.TestListener.class)
 
-public class KnowledgeBaseLoginTest {
+public class KnowledgeBaseLoginTest extends MyListener {
 
-	WebDriver driver = new FirefoxDriver();
-	ExtentReportUtility report;
-	ExtentReport extent;
+//	WebDriver driver = new FirefoxDriver();
+	//ExtentReportUtility report;
+//	ExtentReport extent;
 	Properties prop = new Properties();
+	HomePage hp;
 	
 	
-	public WebDriver getDriver() {
-        return driver;
-    }
 	
-	
+	 
 
 	@BeforeTest
 	public void setupTest() {
@@ -44,6 +39,9 @@ public class KnowledgeBaseLoginTest {
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/utilities/OR.properties");
 			prop.load(fis);
 			driver.get(prop.getProperty("testSiteURL"));
+			
+			 hp = PageFactory.initElements(driver, HomePage.class);
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -52,7 +50,7 @@ public class KnowledgeBaseLoginTest {
 
 	}
 
-	HomePage hp = PageFactory.initElements(driver, HomePage.class);
+	
 
 	@Test(priority = 1)
 	public void testLoginWithValidCredentialsInMobiControl() {

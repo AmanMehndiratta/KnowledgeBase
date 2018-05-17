@@ -1,4 +1,4 @@
-package extentReportUtilities;
+/*package extentReportUtilities;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -54,3 +54,4 @@ public class BaseTest {
     }
 
 }
+*/
