@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54383" started-at="2018-05-15T19:22:45Z" finished-at="2018-05-15T19:23:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54383" started-at="2018-05-15T19:22:45Z" finished-at="2018-05-15T19:23:39Z">
+      <class name="testSuit.KnowledgeBaseLoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@13a5fe33]" name="setup" is-config="true" duration-ms="38204" started-at="2018-05-16T00:52:45Z" finished-at="2018-05-16T00:53:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testHomePageTabSwitching()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@13a5fe33]" name="testHomePageTabSwitching" duration-ms="6" started-at="2018-05-16T00:53:23Z" finished-at="2018-05-16T00:53:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageTabSwitching -->
+        <test-method status="PASS" signature="testLoginWithValidCredentialsInMobiControl()[pri:1, instance:testSuit.KnowledgeBaseLoginTest@13a5fe33]" name="testLoginWithValidCredentialsInMobiControl" duration-ms="134" started-at="2018-05-16T00:53:23Z" finished-at="2018-05-16T00:53:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithValidCredentialsInMobiControl -->
+        <test-method status="PASS" signature="testLoginWithInvalidCrerdentialsInMobicontrol()[pri:2, instance:testSuit.KnowledgeBaseLoginTest@13a5fe33]" name="testLoginWithInvalidCrerdentialsInMobicontrol" duration-ms="66" started-at="2018-05-16T00:53:23Z" finished-at="2018-05-16T00:53:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidCrerdentialsInMobicontrol -->
+        <test-method status="PASS" signature="testExistenceOfFeedbackButton()[pri:3, instance:testSuit.KnowledgeBaseLoginTest@13a5fe33]" name="testExistenceOfFeedbackButton" duration-ms="15336" started-at="2018-05-16T00:53:23Z" finished-at="2018-05-16T00:53:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExistenceOfFeedbackButton -->
+        <test-method status="PASS" signature="testHomePageTitle()[pri:4, instance:testSuit.KnowledgeBaseLoginTest@13a5fe33]" name="testHomePageTitle" duration-ms="150" started-at="2018-05-16T00:53:38Z" finished-at="2018-05-16T00:53:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageTitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@13a5fe33]" name="teardown" is-config="true" duration-ms="467" started-at="2018-05-16T00:53:38Z" finished-at="2018-05-16T00:53:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testSuit.KnowledgeBaseLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
