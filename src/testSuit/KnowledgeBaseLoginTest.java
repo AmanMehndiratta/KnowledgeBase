@@ -9,6 +9,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import extentReportUtilities.MyListener;
 import knowledgeBasePages.HomePage;
 import testData.TestData;
@@ -38,8 +40,9 @@ public class KnowledgeBaseLoginTest extends MyListener {
 			// report.generateReport();
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/utilities/OR.properties");
 			prop.load(fis);
+			//test.log(LogStatus.INFO, "Browser Launched");
 			driver.get(prop.getProperty("testSiteURL"));
-			
+			//test.log(LogStatus.INFO, "Test URL Launched");
 			 hp = PageFactory.initElements(driver, HomePage.class);
 			
 
@@ -55,10 +58,11 @@ public class KnowledgeBaseLoginTest extends MyListener {
 	@Test(priority = 1)
 	public void testLoginWithValidCredentialsInMobiControl() {
 		try {
-			hp.loginMobiControl(driver, TestData.correctUserName, TestData.correctPassword);
 			
+			hp.loginMobiControl(driver, TestData.correctUserName, TestData.correctPassword);
+			test.log(LogStatus.PASS, "User logging in");
 		} catch (Exception e) {
-			e.printStackTrace();
+			test.log(LogStatus.FAIL, "Login Failed due to following error" + e);
 		}
 
 	}
@@ -67,9 +71,9 @@ public class KnowledgeBaseLoginTest extends MyListener {
 	public void testLoginWithInvalidCrerdentialsInMobicontrol() {
 		try {
 			hp.loginMobiControl(driver, TestData.incorrectUsername, TestData.incorrectPassword);
-			
+			test.log(LogStatus.PASS, "User not allowed to login with invalid credentials");
 		} catch (Exception e) {
-			e.printStackTrace();
+			test.log(LogStatus.FAIL, "Login attemt failed due to following reason" + e);
 		}
 
 	}
@@ -79,15 +83,15 @@ public class KnowledgeBaseLoginTest extends MyListener {
 		boolean exist = true;
 		try{
 			if(utilityFunctions.checkElementExistence(driver, Locators.feedbackButton)== exist){
-				//write pass statement to be printed in report
-				System.out.println("Pass");
+				test.log(LogStatus.PASS, "Feedback button exists");
+				
 			}else{
-				//write fail statement to be printed in report
-				System.out.println("Fail");
+				test.log(LogStatus.FAIL, "Feedback button not found and following error was caught");
+
 			}
 				
 		}catch(Exception e){
-			e.printStackTrace();
+			test.log(LogStatus.FAIL, "Feedback button not found and following error was caught" + e );
 		}
 	}
 	
@@ -96,24 +100,15 @@ public class KnowledgeBaseLoginTest extends MyListener {
 		boolean text = true;
 		try{
 			if(utilityFunctions.validateText(driver, Locators.homePageTitle, TestData.homePageTitle) == text){
-				//write pass statement to be printed in report
-				System.out.println("Pass");
+				test.log(LogStatus.PASS, "Home page title is correct i.e. " + TestData.homePageTitle);
 				}
 			}catch(Exception e){
-				//write fail statement to be printed in report
-				System.out.println("Fail");
+				test.log(LogStatus.PASS, "Home page title is incorrect " );
 			}
 		}
 	
 	@Test
 	public void testHomePageTabSwitching(){
-		
-	}
-	
-
-	@AfterClass
-	public void tearDown() {
-		ExtentReport.flushReport();
 		
 	}
 

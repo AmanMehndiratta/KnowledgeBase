@@ -4,7 +4,7 @@
 <listeners>
 <listener class-name="extentReportUtilities.MyListener"></listener>
 </listeners>
-<test name="Test1">
+<test name="KB Login Test">
 <classes>
 <class name="testSuit.KnowledgeBaseLoginTest" />
 </classes>

@@ -62,7 +62,7 @@ public class MyListener implements ITestListener {
 	}
 
 	public void onStart(ITestContext context) {
-		System.out.println("on start");
+		System.out.println("Test Case Started");
 		driver = new FirefoxDriver(); // Set the drivers path in environment
 										// variables to avoid
 										// code(System.setProperty())
