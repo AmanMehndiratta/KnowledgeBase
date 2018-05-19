@@ -68,7 +68,7 @@ public class MyListener implements ITestListener {
 										// variables to avoid
 										// code(System.setProperty())
 		
-		reports = new ExtentReports(new SimpleDateFormat("yyyy-MM-dd hh-mm-ss-ms").format(new Date()) + "reports.html");
+		reports = new ExtentReports(System.getProperty("user.dir")+"//Report//" + new SimpleDateFormat("yyyy-MM-dd hh-mm-ss-ms").format(new Date()) + " reports.html");
 		reports.loadConfig(new File(System.getProperty("user.dir") + "//ExtentReport.xml"));
 	}
 
