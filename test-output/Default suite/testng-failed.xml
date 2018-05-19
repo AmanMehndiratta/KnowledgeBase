@@ -6,7 +6,10 @@
       <class name="testSuit.KnowledgeBaseLoginTest">
         <methods>
           <include name="testLoginWithValidCredentialsInMobiControl"/>
+          <include name="testExistenceOfFeedbackButton"/>
           <include name="setupTest"/>
+          <include name="testHomePageTabSwitching"/>
+          <include name="testLoginWithInvalidCrerdentialsInMobicontrol"/>
         </methods>
       </class> <!-- testSuit.KnowledgeBaseLoginTest -->
     </classes>

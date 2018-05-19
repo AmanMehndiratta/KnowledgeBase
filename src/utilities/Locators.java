@@ -17,7 +17,9 @@ public class Locators {
 	
 	//HomePage elements
 	public static final String homePageTitle = "html/body/div[2]/div/ul/li[1]/h1";
-	
+	public static final String questionsForYou = "html/body/main/div/div/div[2]/div[3]/div/ul/li[3]/a/i";
+	public static final String articlesTabOnHomePage = "html/body/main/div/div/div[1]/ul/li[2]/a";
+	public static final String questionsTabOnHomePage = "html/body/main/div/div/div[1]/ul/li[1]/a";
 	
 
 

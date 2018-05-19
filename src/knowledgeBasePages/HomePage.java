@@ -32,6 +32,13 @@ public class HomePage {
 
 	@FindBy(xpath = Locators.closeMobiControlLoginPopup)
 	public WebElement closeMobicontrolLoginPopup;
+	
+	@FindBy(xpath = Locators.articlesTabOnHomePage)
+	public WebElement articlesTabOnHomePage;
+	
+	@FindBy(xpath = Locators.questionsTabOnHomePage)
+	public WebElement questionsTabOnHomePage;
+	
 
 	public void loginMobiControl(WebDriver driver, String username, String password) throws Exception {
 		utilityFunctions.waitForElementToBeClickable(driver, Locators.loginButton);
@@ -50,6 +57,25 @@ public class HomePage {
 			closeMobicontrolLoginPopup.click();
 		}
 		
+	}
+	
+	public boolean goToArticlesTab(WebDriver driver){
+		try{
+			articlesTabOnHomePage.click();
+			return true;
+		}catch(Exception e){
+			return false;
+		}
+		
+	}
+	
+	public boolean goToQuestionsTab(WebDriver driver){
+		try{
+			questionsTabOnHomePage.click();
+			return true;
+		}catch(Exception e){
+			return false;
+		}
 	}
 
 }

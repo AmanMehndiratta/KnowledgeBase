@@ -26,18 +26,19 @@ public class MyListener implements ITestListener {
 	protected static ExtentTest test;
 
 	public void onTestStart(ITestResult result) {
-		System.out.println("on test start");
+		System.out.println("Test Case "+result.getMethod().getMethodName() + " started");
 		test = reports.startTest(result.getMethod().getMethodName());
 		test.log(LogStatus.INFO, result.getMethod().getMethodName() + "test is started");
+		
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		System.out.println("on test success");
+		System.out.println("Test Case Passed");
 		test.log(LogStatus.PASS, result.getMethod().getMethodName() + "test is passed");
 	}
 
 	public void onTestFailure(ITestResult result) {
-		System.out.println("on test failure");
+		System.out.println("Test Case Failed");
 		test.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed");
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
@@ -53,7 +54,7 @@ public class MyListener implements ITestListener {
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		System.out.println("on test skipped");
+		System.out.println("Test Case Skipped");
 		test.log(LogStatus.SKIP, result.getMethod().getMethodName() + "test is skipped");
 	}
 

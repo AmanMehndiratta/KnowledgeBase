@@ -1,4 +1,4 @@
-package extentReportUtilities;
+/*package extentReportUtilities;
 
 import com.relevantcodes.extentreports.ExtentReports;
 
@@ -17,3 +17,4 @@ public class ExtentManager {
         return extent;
     }
 }
+*/

@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="extentReportUtilities.MyListener"/>
+  </listeners>
+  <test name="KB Login Test(failed)" parallel="tests">
     <classes>
       <class name="testSuit.KnowledgeBaseLoginTest">
         <methods>
-          <include name="testLoginWithValidCredentialsInMobiControl"/>
+          <include name="testExistenceOfFeedbackButton"/>
           <include name="setupTest"/>
+          <include name="validateHomePageTitle"/>
         </methods>
       </class> <!-- testSuit.KnowledgeBaseLoginTest -->
+      <class name="testSuit.TestMyFollowing">
+        <methods>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- testSuit.TestMyFollowing -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- KB Login Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
