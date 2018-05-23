@@ -65,5 +65,31 @@ public class TestMyFollowing extends MyListener {
 	public void testPostStats() {
 		test.log(LogStatus.PASS, "testPostStats test passed");
 	}
-
+	
+	@Test
+	public void testUnFollowActionOnDiscussionsTab(){
+		
+	}
+	
+	@Test
+	public void testUpvoteAction(){
+		
+	}
+	
+	@Test
+	public void testAnswerAction(){
+		
+	}
+	
+	@Test
+	public void testFollowActionOnCategoryScreen(){
+		
+	}
+	
+	@Test
+	public void testRedirectionToCategoryScreen(){
+		
+	}
+	
+	
 }

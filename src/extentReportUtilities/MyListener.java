@@ -1,35 +1,44 @@
 package extentReportUtilities;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 
-import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.google.common.io.Files;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import freemarker.template.Template;
 
 public class MyListener implements ITestListener {
 
 	protected static WebDriver driver;
 	protected static ExtentReports reports;
 	protected static ExtentTest test;
+	Properties OR = new Properties();
 
 	public void onTestStart(ITestResult result) {
-		System.out.println("Test Case "+result.getMethod().getMethodName() + " started");
+		System.out.println("Test Case " + result.getMethod().getMethodName() + " started");
 		test = reports.startTest(result.getMethod().getMethodName());
 		test.log(LogStatus.INFO, result.getMethod().getMethodName() + "test is started");
-		
+
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -42,15 +51,22 @@ public class MyListener implements ITestListener {
 		test.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed");
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
+		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" +result.getMethod().getMethodName()
+				+ ".png";
+		
+		File finalDestination = new File(destination);
 		try {
-			FileUtils.copyFile(src, new File("C:\\images\\" + result.getMethod().getMethodName() + ".png"));
-			String file = test.addScreenCapture("C:\\images\\" + result.getMethod().getMethodName() + ".png");
-			test.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed", file);
-			test.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed",
-					result.getThrowable().getMessage());
+			Files.copy(src, finalDestination);
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		//Files.copy(src, new File("C:\\images\\" +result.getMethod().getMethodName() + ".png"));
+		String file = test.addScreenCapture(System.getProperty("user.dir") + "/FailedTestsScreenshots/" + result.getMethod().getMethodName() + ".png");
+		test.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed", file);
+		test.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed",
+				result.getThrowable().getMessage());
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -64,11 +80,52 @@ public class MyListener implements ITestListener {
 
 	public void onStart(ITestContext context) {
 		System.out.println("Test Case Started");
-		driver = new FirefoxDriver(); // Set the drivers path in environment
-										// variables to avoid
-										// code(System.setProperty())
+
+		FileInputStream fis = null;
+		try {
+			fis = new FileInputStream(System.getProperty("user.dir") + "/src/utilities/OR.properties");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			OR.load(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String browser = OR.getProperty("browser");
+		switch (browser) {
+		case "firefox":
+			System.setProperty("webdriver.firefox.driver", "C:\\Users\\amehndiratta\\Downloads\\geckodriver.exe");
+			driver = new FirefoxDriver();
+			driver.manage().window().maximize();
+			break;
+		case "chrome":
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\amehndiratta\\Downloads\\//chromedriver.exe");
+			driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			break;
+		default:
+			System.setProperty("webdriver.firefox.driver", "C:\\Users\\amehndiratta\\Downloads\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		}
+
+		// System.setProperty("webdriver.chrome.driver",
+		// System.getProperty("user.dir"+"//chromedriver"));
+		// driver = new ChromeDriver();
+
+		//System.setProperty("webdriver.gecko.driver","C:\\Users\\amehndiratta\\Downloads\\geckodriver.exe");
 		
-		reports = new ExtentReports(System.getProperty("user.dir")+"//Report//" + new SimpleDateFormat("yyyy-MM-dd hh-mm-ss-ms").format(new Date()) + " reports.html");
+       
+		//driver = new FirefoxDriver(); // Set the drivers path in environment
+		// variables to avoid
+		// code(System.setProperty())
+		
+
+
+		reports = new ExtentReports(System.getProperty("user.dir") + "//Report//"
+				+ new SimpleDateFormat("yyyy-MM-dd hh-mm-ss-ms").format(new Date()) + " reports.html");
 		reports.loadConfig(new File(System.getProperty("user.dir") + "//ExtentReport.xml"));
 	}
 

@@ -5,19 +5,20 @@ import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 
+import extentReportUtilities.MyListener;
 import utilities.ExtentReportUtility;
 
-public class TestAddDiscussion {
+public class TestAddDiscussion extends MyListener{
 
-	WebDriver driver = new FirefoxDriver();
-	ExtentReportUtility report;
-	ExtentReports extent;
+	//WebDriver driver = new FirefoxDriver();
+	//ExtentReportUtility report;
+	//ExtentReports extent;
 	Properties prop = new Properties();
 
 	@BeforeTest
