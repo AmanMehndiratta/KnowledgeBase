@@ -8,14 +8,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 
-
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -24,8 +21,6 @@ import com.google.common.io.Files;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
-import freemarker.template.Template;
 
 public class MyListener implements ITestListener {
 
@@ -97,17 +92,17 @@ public class MyListener implements ITestListener {
 		String browser = OR.getProperty("browser");
 		switch (browser) {
 		case "firefox":
-			System.setProperty("webdriver.firefox.driver", "C:\\Users\\amehndiratta\\Downloads\\geckodriver.exe");
+			System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			break;
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\amehndiratta\\Downloads\\//chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			break;
 		default:
-			System.setProperty("webdriver.firefox.driver", "C:\\Users\\amehndiratta\\Downloads\\geckodriver.exe");
+			System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 

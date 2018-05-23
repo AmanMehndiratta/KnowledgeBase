@@ -2,116 +2,116 @@
 <testng-results skipped="0" failed="2" total="26" passed="24">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="77255" started-at="2018-05-23T14:33:04Z" finished-at="2018-05-23T14:34:22Z">
+  <suite name="Suite" duration-ms="73096" started-at="2018-05-23T15:12:49Z" finished-at="2018-05-23T15:14:02Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="77255" started-at="2018-05-23T14:33:04Z" finished-at="2018-05-23T14:34:22Z">
+    <test name="Test" duration-ms="73096" started-at="2018-05-23T15:12:49Z" finished-at="2018-05-23T15:14:02Z">
       <class name="testSuit.TestMyFollowing">
-        <test-method status="PASS" signature="testAnswerAction()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testAnswerAction" duration-ms="2" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testAnswerAction()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testAnswerAction" duration-ms="2" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAnswerAction -->
-        <test-method status="PASS" signature="testFollowActionOnCategoryScreen()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testFollowActionOnCategoryScreen" duration-ms="1" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testFollowActionOnCategoryScreen()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testFollowActionOnCategoryScreen" duration-ms="4" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFollowActionOnCategoryScreen -->
-        <test-method status="PASS" signature="testRedirectionToCategoryScreen()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testRedirectionToCategoryScreen" duration-ms="1" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testRedirectionToCategoryScreen()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testRedirectionToCategoryScreen" duration-ms="2" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRedirectionToCategoryScreen -->
-        <test-method status="PASS" signature="testUnFollowActionOnDiscussionsTab()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testUnFollowActionOnDiscussionsTab" duration-ms="0" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testUnFollowActionOnDiscussionsTab()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testUnFollowActionOnDiscussionsTab" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUnFollowActionOnDiscussionsTab -->
-        <test-method status="PASS" signature="testUpvoteAction()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testUpvoteAction" duration-ms="1" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testUpvoteAction()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testUpvoteAction" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpvoteAction -->
-        <test-method status="PASS" signature="testPageTitle()[pri:1, instance:testSuit.TestMyFollowing@6093dd95]" name="testPageTitle" duration-ms="3" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testPageTitle()[pri:1, instance:testSuit.TestMyFollowing@6093dd95]" name="testPageTitle" duration-ms="2" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPageTitle -->
-        <test-method status="PASS" signature="testTabSwitching()[pri:2, instance:testSuit.TestMyFollowing@6093dd95]" name="testTabSwitching" duration-ms="0" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testTabSwitching()[pri:2, instance:testSuit.TestMyFollowing@6093dd95]" name="testTabSwitching" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTabSwitching -->
-        <test-method status="PASS" signature="testRedirectitonToUserProfile()[pri:3, instance:testSuit.TestMyFollowing@6093dd95]" name="testRedirectitonToUserProfile" duration-ms="1" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testRedirectitonToUserProfile()[pri:3, instance:testSuit.TestMyFollowing@6093dd95]" name="testRedirectitonToUserProfile" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRedirectitonToUserProfile -->
-        <test-method status="PASS" signature="testRedirectionToPost()[pri:4, instance:testSuit.TestMyFollowing@6093dd95]" name="testRedirectionToPost" duration-ms="1" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testRedirectionToPost()[pri:4, instance:testSuit.TestMyFollowing@6093dd95]" name="testRedirectionToPost" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRedirectionToPost -->
-        <test-method status="PASS" signature="testPostStats()[pri:5, instance:testSuit.TestMyFollowing@6093dd95]" name="testPostStats" duration-ms="1" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testPostStats()[pri:5, instance:testSuit.TestMyFollowing@6093dd95]" name="testPostStats" duration-ms="2" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostStats -->
       </class> <!-- testSuit.TestMyFollowing -->
       <class name="testSuit.KnowledgeBaseLoginTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@6d4b1c02]" name="setupTest" is-config="true" duration-ms="12242" started-at="2018-05-23T20:03:09Z" finished-at="2018-05-23T20:03:22Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@6d4b1c02]" name="setupTest" is-config="true" duration-ms="13356" started-at="2018-05-23T20:42:56Z" finished-at="2018-05-23T20:43:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestAddDiscussion@4883b407]" name="setupTest" is-config="true" duration-ms="911" started-at="2018-05-23T20:03:22Z" finished-at="2018-05-23T20:03:23Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestAddDiscussion@4883b407]" name="setupTest" is-config="true" duration-ms="1010" started-at="2018-05-23T20:43:09Z" finished-at="2018-05-23T20:43:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="setupTest" is-config="true" duration-ms="1358" started-at="2018-05-23T20:03:23Z" finished-at="2018-05-23T20:03:24Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="setupTest" is-config="true" duration-ms="1833" started-at="2018-05-23T20:43:10Z" finished-at="2018-05-23T20:43:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="setupTest" is-config="true" duration-ms="1412" started-at="2018-05-23T20:03:24Z" finished-at="2018-05-23T20:03:25Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="setupTest" is-config="true" duration-ms="1986" started-at="2018-05-23T20:43:12Z" finished-at="2018-05-23T20:43:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="testLoginWithValidCredentialsInMobiControl()[pri:1, instance:testSuit.KnowledgeBaseLoginTest@6d4b1c02]" name="testLoginWithValidCredentialsInMobiControl" duration-ms="23498" started-at="2018-05-23T20:03:25Z" finished-at="2018-05-23T20:03:49Z">
+        <test-method status="PASS" signature="testLoginWithValidCredentialsInMobiControl()[pri:1, instance:testSuit.KnowledgeBaseLoginTest@6d4b1c02]" name="testLoginWithValidCredentialsInMobiControl" duration-ms="15172" started-at="2018-05-23T20:43:14Z" finished-at="2018-05-23T20:43:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithValidCredentialsInMobiControl -->
-        <test-method status="PASS" signature="testLoginWithInvalidCrerdentialsInMobicontrol()[pri:2, instance:testSuit.KnowledgeBaseLoginTest@6d4b1c02]" name="testLoginWithInvalidCrerdentialsInMobicontrol" duration-ms="16559" started-at="2018-05-23T20:03:49Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testLoginWithInvalidCrerdentialsInMobicontrol()[pri:2, instance:testSuit.KnowledgeBaseLoginTest@6d4b1c02]" name="testLoginWithInvalidCrerdentialsInMobicontrol" duration-ms="16660" started-at="2018-05-23T20:43:29Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCrerdentialsInMobicontrol -->
       </class> <!-- testSuit.KnowledgeBaseLoginTest -->
       <class name="testSuit.TestHomePage">
-        <test-method status="PASS" signature="testRedirectionToActivity()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToActivity" duration-ms="0" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testRedirectionToActivity()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToActivity" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRedirectionToActivity -->
-        <test-method status="PASS" signature="testRedirectionToBadges()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToBadges" duration-ms="1" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testRedirectionToBadges()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToBadges" duration-ms="2" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRedirectionToBadges -->
-        <test-method status="PASS" signature="testRedirectionToCategoryFromCategorySection()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToCategoryFromCategorySection" duration-ms="0" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testRedirectionToCategoryFromCategorySection()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToCategoryFromCategorySection" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRedirectionToCategoryFromCategorySection -->
-        <test-method status="PASS" signature="testRedirectionToCategoryPageFromQuestionsCategory()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToCategoryPageFromQuestionsCategory" duration-ms="0" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testRedirectionToCategoryPageFromQuestionsCategory()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToCategoryPageFromQuestionsCategory" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRedirectionToCategoryPageFromQuestionsCategory -->
-        <test-method status="PASS" signature="testRedirectionToLeaderBoard()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToLeaderBoard" duration-ms="1" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testRedirectionToLeaderBoard()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToLeaderBoard" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRedirectionToLeaderBoard -->
-        <test-method status="PASS" signature="testRedirectionToPost()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToPost" duration-ms="1" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testRedirectionToPost()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToPost" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRedirectionToPost -->
-        <test-method status="PASS" signature="testRedirectionToTagPageFromTagsSection()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToTagPageFromTagsSection" duration-ms="0" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testRedirectionToTagPageFromTagsSection()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToTagPageFromTagsSection" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRedirectionToTagPageFromTagsSection -->
-        <test-method status="PASS" signature="testSearchAutoSuggestFeature()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testSearchAutoSuggestFeature" duration-ms="1" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testSearchAutoSuggestFeature()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testSearchAutoSuggestFeature" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchAutoSuggestFeature -->
-        <test-method status="PASS" signature="testSearchWithRandomText()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testSearchWithRandomText" duration-ms="1" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:05Z">
+        <test-method status="PASS" signature="testSearchWithRandomText()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testSearchWithRandomText" duration-ms="0" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchWithRandomText -->
-        <test-method status="FAIL" signature="testExistenceOfFeedbackButton()[pri:1, instance:testSuit.TestHomePage@5622fdf]" name="testExistenceOfFeedbackButton" duration-ms="15218" started-at="2018-05-23T20:04:05Z" finished-at="2018-05-23T20:04:21Z">
+        <test-method status="FAIL" signature="testExistenceOfFeedbackButton()[pri:1, instance:testSuit.TestHomePage@5622fdf]" name="testExistenceOfFeedbackButton" duration-ms="15270" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:44:01Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Feedback button not found]]>
@@ -150,7 +150,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExistenceOfFeedbackButton -->
-        <test-method status="FAIL" signature="validateHomePageTitle()[pri:2, instance:testSuit.TestHomePage@5622fdf]" name="validateHomePageTitle" duration-ms="48" started-at="2018-05-23T20:04:21Z" finished-at="2018-05-23T20:04:21Z">
+        <test-method status="FAIL" signature="validateHomePageTitle()[pri:2, instance:testSuit.TestHomePage@5622fdf]" name="validateHomePageTitle" duration-ms="48" started-at="2018-05-23T20:44:02Z" finished-at="2018-05-23T20:44:02Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Wrong home page title is coming]]>
@@ -189,17 +189,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHomePageTitle -->
-        <test-method status="PASS" signature="testHomePageTabSwitching()[pri:3, instance:testSuit.TestHomePage@5622fdf]" name="testHomePageTabSwitching" duration-ms="508" started-at="2018-05-23T20:04:21Z" finished-at="2018-05-23T20:04:22Z">
+        <test-method status="PASS" signature="testHomePageTabSwitching()[pri:3, instance:testSuit.TestHomePage@5622fdf]" name="testHomePageTabSwitching" duration-ms="487" started-at="2018-05-23T20:44:02Z" finished-at="2018-05-23T20:44:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageTabSwitching -->
       </class> <!-- testSuit.TestHomePage -->
       <class name="testSuit.TestAddDiscussion">
-        <test-method status="PASS" signature="testAddDiscussion()[pri:0, instance:testSuit.TestAddDiscussion@4883b407]" name="testAddDiscussion" duration-ms="1" started-at="2018-05-23T20:04:22Z" finished-at="2018-05-23T20:04:22Z">
+        <test-method status="PASS" signature="testAddDiscussion()[pri:0, instance:testSuit.TestAddDiscussion@4883b407]" name="testAddDiscussion" duration-ms="1" started-at="2018-05-23T20:44:02Z" finished-at="2018-05-23T20:44:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddDiscussion -->
-        <test-method status="PASS" signature="testFrontEndValidations()[pri:0, instance:testSuit.TestAddDiscussion@4883b407]" name="testFrontEndValidations" duration-ms="0" started-at="2018-05-23T20:04:22Z" finished-at="2018-05-23T20:04:22Z">
+        <test-method status="PASS" signature="testFrontEndValidations()[pri:0, instance:testSuit.TestAddDiscussion@4883b407]" name="testFrontEndValidations" duration-ms="1" started-at="2018-05-23T20:44:02Z" finished-at="2018-05-23T20:44:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFrontEndValidations -->
