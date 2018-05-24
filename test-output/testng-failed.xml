@@ -8,26 +8,16 @@
     <classes>
       <class name="testSuit.KnowledgeBaseLoginTest">
         <methods>
+          <include name="testLoginWithValidCredentialsInMobiControl"/>
           <include name="setupTest"/>
+          <include name="testLoginWithInvalidCrerdentialsInMobicontrol"/>
         </methods>
       </class> <!-- testSuit.KnowledgeBaseLoginTest -->
-      <class name="testSuit.TestAddDiscussion">
+      <class name="testSuit.TestArticleDetails">
         <methods>
           <include name="setupTest"/>
         </methods>
-      </class> <!-- testSuit.TestAddDiscussion -->
-      <class name="testSuit.TestMyFollowing">
-        <methods>
-          <include name="setupTest"/>
-        </methods>
-      </class> <!-- testSuit.TestMyFollowing -->
-      <class name="testSuit.TestHomePage">
-        <methods>
-          <include name="setupTest"/>
-          <include name="testExistenceOfFeedbackButton"/>
-          <include name="validateHomePageTitle"/>
-        </methods>
-      </class> <!-- testSuit.TestHomePage -->
+      </class> <!-- testSuit.TestArticleDetails -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

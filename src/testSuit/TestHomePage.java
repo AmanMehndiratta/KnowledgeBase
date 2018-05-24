@@ -38,9 +38,7 @@ public class TestHomePage extends MyListener {
 
 		} catch (Exception e) {
 			e.printStackTrace();
-
 		}
-
 	}
 
 	@Test(priority = 1)
@@ -100,51 +98,50 @@ public class TestHomePage extends MyListener {
 			test.log(LogStatus.FAIL, "Tab switching now working as following error was thrown" + e);
 		}
 	}
-	
-	@Test
-	public void testRedirectionToCategoryPageFromQuestionsCategory(){
-		
+
+	// @Test
+	public void testRedirectionToCategoryPageFromQuestionsCategory() {
+
 	}
-	
-	@Test
-	public void testRedirectionToPost(){
-		
+
+	// @Test
+	public void testRedirectionToPost() {
+
 	}
-	
-	@Test
-	public void testRedirectionToCategoryFromCategorySection(){
-		
+
+	// @Test
+	public void testRedirectionToCategoryFromCategorySection() {
+
 	}
-	
-	@Test
-	public void testRedirectionToTagPageFromTagsSection(){
-		
+
+	// @Test
+	public void testRedirectionToTagPageFromTagsSection() {
+
 	}
-	
-	@Test
-	public void testRedirectionToLeaderBoard(){
-		
+
+	// @Test
+	public void testRedirectionToLeaderBoard() {
+
 	}
-	
-	@Test
-	public void testRedirectionToActivity(){
-		
+
+	// @Test
+	public void testRedirectionToActivity() {
+
 	}
-	
-	@Test
-	public void testRedirectionToBadges(){
-		
+
+	// @Test
+	public void testRedirectionToBadges() {
+
 	}
-	
-	
-	@Test
-	public void testSearchAutoSuggestFeature(){
-		
+
+	// @Test
+	public void testSearchAutoSuggestFeature() {
+
 	}
-	
-	@Test
-	public void testSearchWithRandomText(){
-		
+
+	// @Test
+	public void testSearchWithRandomText() {
+
 	}
-	
+
 }

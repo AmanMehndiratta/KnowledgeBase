@@ -2,6 +2,7 @@ package knowledgeBasePages;
 
 
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,7 +43,7 @@ public class HomePage {
 	public WebElement questionsTabOnHomePage;
 	
 
-	public void loginMobiControl(WebDriver driver, String username, String password) throws Exception {
+	public boolean loginMobiControl(WebDriver driver, String username, String password) throws Exception {
 		utilityFunctions.waitForElementToBeClickable(driver, Locators.loginButton);
 		loginButton.click();
 		loginWithMobiControl.click();
@@ -55,10 +56,29 @@ public class HomePage {
 			utilityFunctions.waitForElementToBeClickable(driver, Locators.userProfileIcon);
 			userProfileIcon.click();
 			logoutButton.click();
+			return true;
 		} catch (Exception e) {
+			
 			closeMobicontrolLoginPopup.click();
+			return false;
 		}
 		
+	}
+	
+	public boolean remainLoginMobiControl(WebDriver driver, String username, String password) throws Exception {
+		
+		try{utilityFunctions.waitForElementToBeClickable(driver, Locators.loginButton);
+		loginButton.click();
+		loginWithMobiControl.click();
+		utilityFunctions.waitForElementToBeClickable(driver, Locators.mobiControlEnterEmail);
+		mobiControlEnterEmail.sendKeys(username);
+		
+		mobiControlEnterPassword.sendKeys(password);
+		mobiControlLoginButton.click();
+		return true;
+		}catch(Exception e){
+			return false;
+		}
 	}
 	
 	public boolean goToArticlesTab(WebDriver driver){

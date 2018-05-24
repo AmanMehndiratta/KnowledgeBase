@@ -1,209 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="26" passed="24">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="73096" started-at="2018-05-23T15:12:49Z" finished-at="2018-05-23T15:14:02Z">
+  <suite name="Suite" duration-ms="55548" started-at="2018-05-24T15:45:03Z" finished-at="2018-05-24T15:45:58Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="73096" started-at="2018-05-23T15:12:49Z" finished-at="2018-05-23T15:14:02Z">
-      <class name="testSuit.TestMyFollowing">
-        <test-method status="PASS" signature="testAnswerAction()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testAnswerAction" duration-ms="2" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAnswerAction -->
-        <test-method status="PASS" signature="testFollowActionOnCategoryScreen()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testFollowActionOnCategoryScreen" duration-ms="4" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFollowActionOnCategoryScreen -->
-        <test-method status="PASS" signature="testRedirectionToCategoryScreen()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testRedirectionToCategoryScreen" duration-ms="2" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRedirectionToCategoryScreen -->
-        <test-method status="PASS" signature="testUnFollowActionOnDiscussionsTab()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testUnFollowActionOnDiscussionsTab" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUnFollowActionOnDiscussionsTab -->
-        <test-method status="PASS" signature="testUpvoteAction()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="testUpvoteAction" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpvoteAction -->
-        <test-method status="PASS" signature="testPageTitle()[pri:1, instance:testSuit.TestMyFollowing@6093dd95]" name="testPageTitle" duration-ms="2" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPageTitle -->
-        <test-method status="PASS" signature="testTabSwitching()[pri:2, instance:testSuit.TestMyFollowing@6093dd95]" name="testTabSwitching" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTabSwitching -->
-        <test-method status="PASS" signature="testRedirectitonToUserProfile()[pri:3, instance:testSuit.TestMyFollowing@6093dd95]" name="testRedirectitonToUserProfile" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRedirectitonToUserProfile -->
-        <test-method status="PASS" signature="testRedirectionToPost()[pri:4, instance:testSuit.TestMyFollowing@6093dd95]" name="testRedirectionToPost" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRedirectionToPost -->
-        <test-method status="PASS" signature="testPostStats()[pri:5, instance:testSuit.TestMyFollowing@6093dd95]" name="testPostStats" duration-ms="2" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPostStats -->
-      </class> <!-- testSuit.TestMyFollowing -->
-      <class name="testSuit.KnowledgeBaseLoginTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@6d4b1c02]" name="setupTest" is-config="true" duration-ms="13356" started-at="2018-05-23T20:42:56Z" finished-at="2018-05-23T20:43:09Z">
+    <test name="Test" duration-ms="55548" started-at="2018-05-24T15:45:03Z" finished-at="2018-05-24T15:45:58Z">
+      <class name="testSuit.TestArticleDetails">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestArticleDetails@6a4f787b]" name="setupTest" is-config="true" duration-ms="11820" started-at="2018-05-24T21:15:07Z" finished-at="2018-05-24T21:15:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestAddDiscussion@4883b407]" name="setupTest" is-config="true" duration-ms="1010" started-at="2018-05-23T20:43:09Z" finished-at="2018-05-23T20:43:10Z">
+        <test-method status="PASS" signature="testPresenceOfArticleHelpfulPercentageAfterVotingYes()[pri:0, instance:testSuit.TestArticleDetails@6a4f787b]" name="testPresenceOfArticleHelpfulPercentageAfterVotingYes" duration-ms="39092" started-at="2018-05-24T21:15:19Z" finished-at="2018-05-24T21:15:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="setupTest" is-config="true" duration-ms="1833" started-at="2018-05-23T20:43:10Z" finished-at="2018-05-23T20:43:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestMyFollowing@6093dd95]" name="setupTest" is-config="true" duration-ms="1986" started-at="2018-05-23T20:43:12Z" finished-at="2018-05-23T20:43:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="testLoginWithValidCredentialsInMobiControl()[pri:1, instance:testSuit.KnowledgeBaseLoginTest@6d4b1c02]" name="testLoginWithValidCredentialsInMobiControl" duration-ms="15172" started-at="2018-05-23T20:43:14Z" finished-at="2018-05-23T20:43:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginWithValidCredentialsInMobiControl -->
-        <test-method status="PASS" signature="testLoginWithInvalidCrerdentialsInMobicontrol()[pri:2, instance:testSuit.KnowledgeBaseLoginTest@6d4b1c02]" name="testLoginWithInvalidCrerdentialsInMobicontrol" duration-ms="16660" started-at="2018-05-23T20:43:29Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginWithInvalidCrerdentialsInMobicontrol -->
-      </class> <!-- testSuit.KnowledgeBaseLoginTest -->
-      <class name="testSuit.TestHomePage">
-        <test-method status="PASS" signature="testRedirectionToActivity()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToActivity" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRedirectionToActivity -->
-        <test-method status="PASS" signature="testRedirectionToBadges()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToBadges" duration-ms="2" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRedirectionToBadges -->
-        <test-method status="PASS" signature="testRedirectionToCategoryFromCategorySection()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToCategoryFromCategorySection" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRedirectionToCategoryFromCategorySection -->
-        <test-method status="PASS" signature="testRedirectionToCategoryPageFromQuestionsCategory()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToCategoryPageFromQuestionsCategory" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRedirectionToCategoryPageFromQuestionsCategory -->
-        <test-method status="PASS" signature="testRedirectionToLeaderBoard()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToLeaderBoard" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRedirectionToLeaderBoard -->
-        <test-method status="PASS" signature="testRedirectionToPost()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToPost" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRedirectionToPost -->
-        <test-method status="PASS" signature="testRedirectionToTagPageFromTagsSection()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testRedirectionToTagPageFromTagsSection" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRedirectionToTagPageFromTagsSection -->
-        <test-method status="PASS" signature="testSearchAutoSuggestFeature()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testSearchAutoSuggestFeature" duration-ms="1" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchAutoSuggestFeature -->
-        <test-method status="PASS" signature="testSearchWithRandomText()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="testSearchWithRandomText" duration-ms="0" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchWithRandomText -->
-        <test-method status="FAIL" signature="testExistenceOfFeedbackButton()[pri:1, instance:testSuit.TestHomePage@5622fdf]" name="testExistenceOfFeedbackButton" duration-ms="15270" started-at="2018-05-23T20:43:46Z" finished-at="2018-05-23T20:44:01Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Feedback button not found]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Feedback button not found
-	at org.testng.Assert.fail(Assert.java:94)
-	at testSuit.TestHomePage.testExistenceOfFeedbackButton(TestHomePage.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testExistenceOfFeedbackButton -->
-        <test-method status="FAIL" signature="validateHomePageTitle()[pri:2, instance:testSuit.TestHomePage@5622fdf]" name="validateHomePageTitle" duration-ms="48" started-at="2018-05-23T20:44:02Z" finished-at="2018-05-23T20:44:02Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Wrong home page title is coming]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Wrong home page title is coming
-	at org.testng.Assert.fail(Assert.java:94)
-	at testSuit.TestHomePage.validateHomePageTitle(TestHomePage.java:71)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateHomePageTitle -->
-        <test-method status="PASS" signature="testHomePageTabSwitching()[pri:3, instance:testSuit.TestHomePage@5622fdf]" name="testHomePageTabSwitching" duration-ms="487" started-at="2018-05-23T20:44:02Z" finished-at="2018-05-23T20:44:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHomePageTabSwitching -->
-      </class> <!-- testSuit.TestHomePage -->
-      <class name="testSuit.TestAddDiscussion">
-        <test-method status="PASS" signature="testAddDiscussion()[pri:0, instance:testSuit.TestAddDiscussion@4883b407]" name="testAddDiscussion" duration-ms="1" started-at="2018-05-23T20:44:02Z" finished-at="2018-05-23T20:44:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddDiscussion -->
-        <test-method status="PASS" signature="testFrontEndValidations()[pri:0, instance:testSuit.TestAddDiscussion@4883b407]" name="testFrontEndValidations" duration-ms="1" started-at="2018-05-23T20:44:02Z" finished-at="2018-05-23T20:44:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFrontEndValidations -->
-      </class> <!-- testSuit.TestAddDiscussion -->
+        </test-method> <!-- testPresenceOfArticleHelpfulPercentageAfterVotingYes -->
+      </class> <!-- testSuit.TestArticleDetails -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

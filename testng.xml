@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<listeners>
+	<listeners>
 		<listener class-name="extentReportUtilities.MyListener"></listener>
 	</listeners>
-  <test thread-count="5" name="Test">
-    <classes>
-    <class name="testSuit.KnowledgeBaseLoginTest"/>
-      <class name="testSuit.TestMyFollowing"/>
-      <class name="testSuit.TestHomePage"/>
-      <class name="testSuit.TestAddDiscussion"/>
-      
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="Test">
+		<classes>
+		
+			<class name="testSuit.TestArticleDetails" />
+
+
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
