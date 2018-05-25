@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="55548" started-at="2018-05-24T15:45:03Z" finished-at="2018-05-24T15:45:58Z">
+  <suite name="Suite" duration-ms="22479" started-at="2018-05-25T10:00:21Z" finished-at="2018-05-25T10:00:44Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="55548" started-at="2018-05-24T15:45:03Z" finished-at="2018-05-24T15:45:58Z">
-      <class name="testSuit.TestArticleDetails">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestArticleDetails@6a4f787b]" name="setupTest" is-config="true" duration-ms="11820" started-at="2018-05-24T21:15:07Z" finished-at="2018-05-24T21:15:19Z">
+    <test name="Test" duration-ms="22479" started-at="2018-05-25T10:00:21Z" finished-at="2018-05-25T10:00:44Z">
+      <class name="testSuit.TestAddArticle">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestAddArticle@6a4f787b]" name="setupTest" is-config="true" duration-ms="17477" started-at="2018-05-25T15:30:26Z" finished-at="2018-05-25T15:30:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="testPresenceOfArticleHelpfulPercentageAfterVotingYes()[pri:0, instance:testSuit.TestArticleDetails@6a4f787b]" name="testPresenceOfArticleHelpfulPercentageAfterVotingYes" duration-ms="39092" started-at="2018-05-24T21:15:19Z" finished-at="2018-05-24T21:15:58Z">
+        <test-method status="PASS" signature="addArticle()[pri:0, instance:testSuit.TestAddArticle@6a4f787b]" name="addArticle" duration-ms="10" started-at="2018-05-25T15:30:44Z" finished-at="2018-05-25T15:30:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPresenceOfArticleHelpfulPercentageAfterVotingYes -->
-      </class> <!-- testSuit.TestArticleDetails -->
+        </test-method> <!-- addArticle -->
+      </class> <!-- testSuit.TestAddArticle -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

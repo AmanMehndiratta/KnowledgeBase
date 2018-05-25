@@ -13,11 +13,13 @@
           <include name="testLoginWithInvalidCrerdentialsInMobicontrol"/>
         </methods>
       </class> <!-- testSuit.KnowledgeBaseLoginTest -->
-      <class name="testSuit.TestArticleDetails">
+      <class name="testSuit.TestHomePage">
         <methods>
           <include name="setupTest"/>
+          <include name="testExistenceOfFeedbackButton"/>
+          <include name="validateHomePageTitle"/>
         </methods>
-      </class> <!-- testSuit.TestArticleDetails -->
+      </class> <!-- testSuit.TestHomePage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

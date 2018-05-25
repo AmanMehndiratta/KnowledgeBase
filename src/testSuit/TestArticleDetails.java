@@ -5,9 +5,7 @@ import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -54,12 +52,12 @@ public class TestArticleDetails extends MyListener{
 	//@Test
 	//need to remove this test as it is very hard to manage xpaths of same articles etc
 	public void testPresenceOfArticleHelpfulPercentageAfterVotingYes() throws Exception{
-		if(utilityFunctions.checkElementExistence(driver, Locators.userProfileIcon)!=true){
-			hp.remainLoginMobiControl(driver,TestData.correctUserName , TestData.correctPassword);
-			utilityFunctions.checkElementExistence(driver, Locators.userProfileIcon);
+		if(utilityFunctions.checkElementExistence(Locators.userProfileIcon)!=true){
+			hp.remainLoginMobiControl(TestData.correctUserName , TestData.correctPassword);
+			utilityFunctions.checkElementExistence(Locators.userProfileIcon);
 		}
 		try{
-		articleDetail.voteArticleWasHelpful(driver);
+		articleDetail.voteArticleWasHelpful();
 		if(articleDetail.presenceOfPercentArticleWasHelpful(driver) == true){
 			test.log(LogStatus.PASS, "% of article is present after voting Yes");
 		}else{

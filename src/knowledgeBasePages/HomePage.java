@@ -1,8 +1,5 @@
 package knowledgeBasePages;
 
-
-
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,6 +8,12 @@ import utilities.Locators;
 import utilities.utilityFunctions;
 
 public class HomePage {
+
+	WebDriver driver;
+
+	public HomePage(WebDriver driver) {
+		this.driver = driver;
+	}
 
 	@FindBy(xpath = Locators.loginButton)
 	public WebElement loginButton;
@@ -35,67 +38,67 @@ public class HomePage {
 
 	@FindBy(xpath = Locators.closeMobiControlLoginPopup)
 	public WebElement closeMobicontrolLoginPopup;
-	
+
 	@FindBy(xpath = Locators.articlesTabOnHomePage)
 	public WebElement articlesTabOnHomePage;
-	
+
 	@FindBy(xpath = Locators.questionsTabOnHomePage)
 	public WebElement questionsTabOnHomePage;
-	
 
-	public boolean loginMobiControl(WebDriver driver, String username, String password) throws Exception {
-		utilityFunctions.waitForElementToBeClickable(driver, Locators.loginButton);
+	public boolean loginMobiControl(String username, String password) throws Exception {
+		utilityFunctions.waitForElementToBeClickable(Locators.loginButton);
 		loginButton.click();
 		loginWithMobiControl.click();
-		utilityFunctions.waitForElementToBeClickable(driver, Locators.mobiControlEnterEmail);
+		utilityFunctions.waitForElementToBeClickable(Locators.mobiControlEnterEmail);
 		mobiControlEnterEmail.sendKeys(username);
-		
+
 		mobiControlEnterPassword.sendKeys(password);
 		mobiControlLoginButton.click();
 		try {
-			utilityFunctions.waitForElementToBeClickable(driver, Locators.userProfileIcon);
+			utilityFunctions.waitForElementToBeClickable(Locators.userProfileIcon);
 			userProfileIcon.click();
 			logoutButton.click();
 			return true;
 		} catch (Exception e) {
-			
+
 			closeMobicontrolLoginPopup.click();
 			return false;
 		}
-		
+
 	}
-	
-	public boolean remainLoginMobiControl(WebDriver driver, String username, String password) throws Exception {
-		
-		try{utilityFunctions.waitForElementToBeClickable(driver, Locators.loginButton);
-		loginButton.click();
-		loginWithMobiControl.click();
-		utilityFunctions.waitForElementToBeClickable(driver, Locators.mobiControlEnterEmail);
-		mobiControlEnterEmail.sendKeys(username);
-		
-		mobiControlEnterPassword.sendKeys(password);
-		mobiControlLoginButton.click();
-		return true;
-		}catch(Exception e){
+
+	public boolean remainLoginMobiControl(String username, String password) throws Exception {
+
+		try {
+			utilityFunctions.waitForElementToBeClickable(Locators.loginButton);
+			loginButton.click();
+			loginWithMobiControl.click();
+			utilityFunctions.waitForElementToBeClickable(Locators.mobiControlEnterEmail);
+			mobiControlEnterEmail.sendKeys(username);
+
+			mobiControlEnterPassword.sendKeys(password);
+			mobiControlLoginButton.click();
+			return true;
+		} catch (Exception e) {
 			return false;
 		}
 	}
-	
-	public boolean goToArticlesTab(WebDriver driver){
-		try{
+
+	public boolean goToArticlesTab(WebDriver driver) {
+		try {
 			articlesTabOnHomePage.click();
 			return true;
-		}catch(Exception e){
+		} catch (Exception e) {
 			return false;
 		}
-		
+
 	}
-	
-	public boolean goToQuestionsTab(WebDriver driver){
-		try{
+
+	public boolean goToQuestionsTab(WebDriver driver) {
+		try {
 			questionsTabOnHomePage.click();
 			return true;
-		}catch(Exception e){
+		} catch (Exception e) {
 			return false;
 		}
 	}

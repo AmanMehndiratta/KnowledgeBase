@@ -4,15 +4,11 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.WebDriver;
-
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentReports;
-
 import extentReportUtilities.MyListener;
-import utilities.ExtentReportUtility;
+
 
 public class TestAddDiscussion extends MyListener{
 

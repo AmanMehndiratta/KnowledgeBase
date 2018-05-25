@@ -45,7 +45,7 @@ public class TestHomePage extends MyListener {
 	public void testExistenceOfFeedbackButton() {
 		boolean exist = true;
 		try {
-			if (utilityFunctions.checkElementExistence(driver, Locators.feedbackButton) == exist) {
+			if (utilityFunctions.checkElementExistence(Locators.feedbackButton) == exist) {
 				test.log(LogStatus.PASS, "Feedback button exists");
 
 			} else {
@@ -63,7 +63,7 @@ public class TestHomePage extends MyListener {
 	public void validateHomePageTitle() {
 		boolean text = true;
 		try {
-			if (utilityFunctions.validateText(driver, Locators.homePageTitle, TestData.homePageTitle) == text) {
+			if (utilityFunctions.validateText( Locators.homePageTitle, TestData.homePageTitle) == text) {
 				test.log(LogStatus.PASS, "Home page title is correct i.e. " + TestData.homePageTitle);
 			} else {
 				Assert.fail("Wrong home page title is coming");

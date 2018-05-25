@@ -32,6 +32,7 @@ public class KnowledgeBaseLoginTest extends MyListener {
 			driver.get(prop.getProperty("testSiteURL"));
 
 			// initialize all the elements of all the pages
+			//new HomePage(driver);
 			hp = PageFactory.initElements(driver, HomePage.class);
 
 		} catch (Exception e) {
@@ -45,7 +46,7 @@ public class KnowledgeBaseLoginTest extends MyListener {
 	public void testLoginWithValidCredentialsInMobiControl() {
 		try {
 
-			if (hp.loginMobiControl(driver, TestData.correctUserName, TestData.correctPassword) == true) {
+			if (hp.loginMobiControl(TestData.correctUserName, TestData.correctPassword) == true) {
 				test.log(LogStatus.PASS, "User logging in");
 			} else {
 				test.log(LogStatus.FAIL, "User not logging in");
@@ -61,7 +62,7 @@ public class KnowledgeBaseLoginTest extends MyListener {
 	@Test(priority = 2)
 	public void testLoginWithInvalidCrerdentialsInMobicontrol() {
 		try {
-			if (hp.loginMobiControl(driver, TestData.incorrectUsername, TestData.incorrectPassword) == false) {
+			if (hp.loginMobiControl(TestData.incorrectUsername, TestData.incorrectPassword) == false) {
 				test.log(LogStatus.PASS, "User not allowed to login with invalid credentials");
 			} else {
 				test.log(LogStatus.FAIL, "User logged in with invalid credentials");
