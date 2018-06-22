@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="103970" started-at="2018-06-21T15:56:47Z" finished-at="2018-06-21T15:58:31Z">
+  <suite name="Suite" duration-ms="137952" started-at="2018-06-22T15:04:19Z" finished-at="2018-06-22T15:06:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="103970" started-at="2018-06-21T15:56:47Z" finished-at="2018-06-21T15:58:31Z">
-      <class name="testSuit.TestHomePage">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestHomePage@9353778]" name="setupTest" is-config="true" duration-ms="36488" started-at="2018-06-21T21:26:52Z" finished-at="2018-06-21T21:27:28Z">
+    <test name="Test" duration-ms="137952" started-at="2018-06-22T15:04:19Z" finished-at="2018-06-22T15:06:37Z">
+      <class name="testSuit.TestTopicDetails">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestTopicDetails@9353778]" name="setupTest" is-config="true" duration-ms="66536" started-at="2018-06-22T20:34:25Z" finished-at="2018-06-22T20:35:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="FAIL" signature="testEditDraftCancel()[pri:0, instance:testSuit.TestHomePage@9353778]" name="testEditDraftCancel" duration-ms="62816" started-at="2018-06-21T21:27:28Z" finished-at="2018-06-21T21:28:31Z">
+        <test-method status="FAIL" signature="testEditDraftCancelOnTopicDetailPage()[pri:0, instance:testSuit.TestTopicDetails@9353778]" name="testEditDraftCancelOnTopicDetailPage" duration-ms="64315" started-at="2018-06-22T20:35:32Z" finished-at="2018-06-22T20:36:36Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: /html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[2]/div/ul/li[1]/a
@@ -19,8 +19,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'IND157', ip: '10.0.225.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10396, moz:profile: C:\Users\amehndiratta\AppDa..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: a8af1fe5-1fa5-4f72-b22c-225e24a09890
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8104, moz:profile: C:\Users\amehndiratta\AppDa..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 1bf2d281-70b0-40b5-9398-6afc992c72d7
 *** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[2]/div/ul/li[1]/a}]]>
             </message>
             <full-stacktrace>
@@ -29,8 +29,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'IND157', ip: '10.0.225.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10396, moz:profile: C:\Users\amehndiratta\AppDa..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: a8af1fe5-1fa5-4f72-b22c-225e24a09890
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8104, moz:profile: C:\Users\amehndiratta\AppDa..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 1bf2d281-70b0-40b5-9398-6afc992c72d7
 *** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[2]/div/ul/li[1]/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -49,7 +49,7 @@ Session ID: a8af1fe5-1fa5-4f72-b22c-225e24a09890
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.getText(Unknown Source)
-	at testSuit.TestHomePage.testEditDraftCancel(TestHomePage.java:112)
+	at testSuit.TestTopicDetails.testEditDraftCancelOnTopicDetailPage(TestTopicDetails.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -79,8 +79,8 @@ Session ID: a8af1fe5-1fa5-4f72-b22c-225e24a09890
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEditDraftCancel -->
-      </class> <!-- testSuit.TestHomePage -->
+        </test-method> <!-- testEditDraftCancelOnTopicDetailPage -->
+      </class> <!-- testSuit.TestTopicDetails -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

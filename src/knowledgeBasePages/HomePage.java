@@ -1,7 +1,5 @@
 package knowledgeBasePages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,6 +53,12 @@ public class HomePage {
 
 	@FindBy(xpath = Locators.cancelAnswerTestFieldForFirstTopic)
 	public WebElement cancelAnswerTestFieldForFirstTopic;
+
+	@FindBy(xpath = "whiteSpaceForFirstAnswerTextField")
+	public WebElement whiteSpaceForFirstAnswerTextField;
+
+	@FindBy(xpath = Locators.firstTopicOnHomePage)
+	public WebElement firstTopicOnHomePage;
 
 	public boolean loginMobiControl(String username, String password) throws Exception {
 
@@ -117,37 +121,45 @@ public class HomePage {
 
 	public boolean createAnswerDraft() {
 		try {
-			if (answerButtonForFirstTopic.getText(). contains("Answer")) {
+			if (answerButtonForFirstTopic.getText().contains("Answer")) {
 				answerButtonForFirstTopic.click();
-				//utilityFunctions.waitForElementToBeClickable(Locators.answerTestFieldForFirstTopic);
-				//driver.findElement(By.xpath(Locators.answerTestFieldForFirstTopic)).click();
-				//driver.findElement(By.xpath(Locators.answerTestFieldForFirstTopic)).sendKeys("Random text");
 				driver.switchTo().frame("PostContent_ifr");
-				driver.findElement(By.xpath(Locators.answerTestFieldForFirstTopic)).click();
-				driver.findElement(By.xpath(Locators.answerTestFieldForFirstTopic)).sendKeys("random text");
-				//driver.switchTo().defaultContent();
-				
-				//answerTestFieldForFirstTopic.click();
-				//answerTestFieldForFirstTopic.sendKeys("Random text");
-				answerButtonForFirstTopic.click();
+				answerTestFieldForFirstTopic.click();
+				answerTestFieldForFirstTopic.sendKeys("random text");
+				driver.navigate().to(driver.getCurrentUrl());
 			}
-
 		} catch (Exception e) {
 			return false;
 		}
-
 		return true;
-
 	}
 
 	public boolean cancelEditDraft() {
 		try {
+			utilityFunctions.waitForElementToBeClickable(Locators.answerButtonForFirstTopic);
 			answerButtonForFirstTopic.click();
 			cancelAnswerTestFieldForFirstTopic.click();
+			utilityFunctions.waitForElementToBeClickable(Locators.answerButtonForFirstTopic);
+			if (answerButtonForFirstTopic.getText().contains("Edit Draft")) {
+				return true;
+			} else {
+				return false;
+			}
 		} catch (Exception e) {
 			return false;
 		}
-		return true;
+
+	}
+
+	public boolean goToFirstTopicDetail() {
+		try {
+			goToQuestionsTab();
+			firstTopicOnHomePage.click();
+			utilityFunctions.waitForElementToBeClickable(Locators.answerButtonOnFirstTopicDetail);
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 
 	}
 

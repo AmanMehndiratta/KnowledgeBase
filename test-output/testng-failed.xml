@@ -6,12 +6,12 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="testSuit.TestHomePage">
+      <class name="testSuit.TestTopicDetails">
         <methods>
           <include name="setupTest"/>
-          <include name="testEditDraftCancel"/>
+          <include name="testEditDraftCancelOnTopicDetailPage"/>
         </methods>
-      </class> <!-- testSuit.TestHomePage -->
+      </class> <!-- testSuit.TestTopicDetails -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

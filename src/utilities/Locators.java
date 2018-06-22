@@ -23,8 +23,15 @@ public class Locators {
 	public static final String askQuestionButton = ".//*[@id='header']/div/div[2]/span[2]/a";
 	public static final String answerButtonForFirstTopic = "/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[2]/div/ul/li[1]/a";
 	public static final String answerTestFieldForFirstTopic = "//*[@id='tinymce']";
-	public static final String cancelAnswerTestFieldForFirstTopic = "//*[@id='btn btn-cancel']/p";
-	
+	public static final String cancelAnswerTestFieldForFirstTopic = "/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[4]/div/form/div/div[3]/button";
+	public static final String whiteSpaceForFirstAnswerTextField = "/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[4]/div/form/div/div[3]";
+	public static final String firstTopicOnHomePage = "/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[1]/h4/a";
+
+	//Topic Detail screen
+	public static final String answerButtonOnFirstTopicDetail = "/html/body/main/div[1]/div/div[4]/div[6]/div/ul/li[1]/font[1]/a";
+	public static final String answerButtonOnTopicDetailScreen = "/html/body/main/div[1]/div/div[4]/div[6]/div/ul/li[1]/font[1]/a";
+	public static final String answerTestFieldForFirstTopicOnTopicDetailScreen = "//*[@id='tinymce']";
+	public static final String cancelAnswerTestFieldForFirstTopicOnTopicDetailScreen = "//*[@id='postcodeform']/div/div[2]/a";
 	
 	//Article Detial screen
 	public static final String yesArticleWasHelpful = "html/body/main/div[1]/div/div[4]/div[3]/div/div/div[1]/ul/li/span[2]/button[1]";

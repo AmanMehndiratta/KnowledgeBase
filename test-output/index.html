@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testSuit.TestHomePage" hash-for-method="testEditDraftCancel">testEditDraftCancel</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testSuit.TestTopicDetails" hash-for-method="testEditDraftCancelOnTopicDetailPage">testEditDraftCancelOnTopicDetailPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -119,21 +119,21 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testSuit.TestHomePage</span>
+              <span class="class-name">testSuit.TestTopicDetails</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testEditDraftCancel">
-                  </a> <!-- testEditDraftCancel -->
-                  <span class="method-name">testEditDraftCancel</span>
+                  <a name="testEditDraftCancelOnTopicDetailPage">
+                  </a> <!-- testEditDraftCancelOnTopicDetailPage -->
+                  <span class="method-name">testEditDraftCancelOnTopicDetailPage</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[2]/div/ul/li[1]/a
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;IND157&apos;, ip: &apos;10.0.225.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10396, moz:profile: C:\Users\amehndiratta\AppDa..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: a8af1fe5-1fa5-4f72-b22c-225e24a09890
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8104, moz:profile: C:\Users\amehndiratta\AppDa..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 1bf2d281-70b0-40b5-9398-6afc992c72d7
 *** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[2]/div/ul/li[1]/a}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -148,7 +148,7 @@ Session ID: a8af1fe5-1fa5-4f72-b22c-225e24a09890
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.getText(Unknown Source)
-	at testSuit.TestHomePage.testEditDraftCancel(TestHomePage.java:112)
+	at testSuit.TestTopicDetails.testEditDraftCancelOnTopicDetailPage(TestTopicDetails.java:65)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -170,7 +170,7 @@ Session ID: a8af1fe5-1fa5-4f72-b22c-225e24a09890
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testSuit.TestHomePage&quot;/&gt;
+      &lt;class name=&quot;testSuit.TestTopicDetails&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -212,9 +212,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testEditDraftCancel')
-data.setCell(0, 2, 'testSuit.TestHomePage')
-data.setCell(0, 3, 62816);
+data.setCell(0, 1, 'testEditDraftCancelOnTopicDetailPage')
+data.setCell(0, 2, 'testSuit.TestTopicDetails')
+data.setCell(0, 3, 64315);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -245,7 +245,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testSuit.TestHomePage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testSuit.TestTopicDetails</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setupTest</span>
                 <span class="method-start">0 ms</span>
@@ -253,8 +253,8 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testEditDraftCancel</span>
-                <span class="method-start">36510 ms</span>
+                <span class="method-name">testEditDraftCancelOnTopicDetailPage</span>
+                <span class="method-start">66555 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -60,8 +60,7 @@ public class MyListener implements ITestListener {
 			e.printStackTrace();
 		}
 
-		// Files.copy(src, new File("C:\\images\\"
-		// +result.getMethod().getMethodName() + ".png"));
+		
 		String file = test.addScreenCapture(System.getProperty("user.dir") + "/FailedTestsScreenshots/"
 				+ result.getMethod().getMethodName() + ".png");
 		test.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed", file);
