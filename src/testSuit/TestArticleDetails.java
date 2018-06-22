@@ -39,6 +39,7 @@ public class TestArticleDetails extends MyListener{
 
 			// initialize all the elements of all the pages
 			articleDetail = PageFactory.initElements(driver, ArticleDetails.class);
+			new utilityFunctions(driver);
 			hp = PageFactory.initElements(driver, HomePage.class);
 
 		} catch (Exception e) {

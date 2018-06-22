@@ -22,12 +22,15 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import utilities.utilityFunctions;
+
 public class MyListener implements ITestListener {
 
 	protected static WebDriver driver;
 	protected static ExtentReports reports;
 	protected static ExtentTest test;
 	Properties OR = new Properties();
+	
 
 	public void onTestStart(ITestResult result) {
 		System.out.println("Test Case " + result.getMethod().getMethodName() + " started");

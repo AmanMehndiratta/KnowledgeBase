@@ -6,18 +6,10 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="testSuit.KnowledgeBaseLoginTest">
-        <methods>
-          <include name="testLoginWithValidCredentialsInMobiControl"/>
-          <include name="setupTest"/>
-          <include name="testLoginWithInvalidCrerdentialsInMobicontrol"/>
-        </methods>
-      </class> <!-- testSuit.KnowledgeBaseLoginTest -->
       <class name="testSuit.TestHomePage">
         <methods>
           <include name="setupTest"/>
-          <include name="testExistenceOfFeedbackButton"/>
-          <include name="validateHomePageTitle"/>
+          <include name="testEditDraftCancel"/>
         </methods>
       </class> <!-- testSuit.TestHomePage -->
     </classes>

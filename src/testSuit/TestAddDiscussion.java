@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import extentReportUtilities.MyListener;
+import utilities.utilityFunctions;
 
 
 public class TestAddDiscussion extends MyListener{
@@ -26,6 +27,7 @@ public class TestAddDiscussion extends MyListener{
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/utilities/OR.properties");
 			prop.load(fis);
 			driver.get(prop.getProperty("testSiteURL"));
+			new utilityFunctions(driver);
 
 		} catch (Exception e) {
 			e.printStackTrace();

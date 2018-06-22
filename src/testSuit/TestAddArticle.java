@@ -35,6 +35,7 @@ public class TestAddArticle extends MyListener {
 
 			driver.get(prop.getProperty("testSiteURL"));
 			articles = PageFactory.initElements(driver, ArticleDetails.class);
+			new utilityFunctions(driver);
 			hp = PageFactory.initElements(driver, HomePage.class);
 
 		} catch (Exception e) {
@@ -44,7 +45,7 @@ public class TestAddArticle extends MyListener {
 
 	}
 	
-	@Test
+	//@Test
 	public void addArticle() throws Exception{
 		if(utilityFunctions.checkElementExistence(Locators.userProfileIcon)!=true){
 			hp.remainLoginMobiControl(TestData.correctUserName , TestData.correctPassword);

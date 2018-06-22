@@ -35,17 +35,18 @@ public class TestHomePage extends MyListener {
 
 			// initialize all the elements of all the pages
 			hp = PageFactory.initElements(driver, HomePage.class);
+			new utilityFunctions(driver);
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void testExistenceOfFeedbackButton() {
-		boolean exist = true;
+		//boolean exist = true;
 		try {
-			if (utilityFunctions.checkElementExistence(Locators.feedbackButton) == exist) {
+			if (utilityFunctions.checkElementExistence(Locators.feedbackButton) == true) {
 				test.log(LogStatus.PASS, "Feedback button exists");
 
 			} else {
@@ -59,11 +60,11 @@ public class TestHomePage extends MyListener {
 		}
 	}
 
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	public void validateHomePageTitle() {
-		boolean text = true;
+		//boolean text = true;
 		try {
-			if (utilityFunctions.validateText( Locators.homePageTitle, TestData.homePageTitle) == text) {
+			if (utilityFunctions.validateText( Locators.homePageTitle, TestData.homePageTitle) == true) {
 				test.log(LogStatus.PASS, "Home page title is correct i.e. " + TestData.homePageTitle);
 			} else {
 				Assert.fail("Wrong home page title is coming");
@@ -74,14 +75,14 @@ public class TestHomePage extends MyListener {
 		}
 	}
 
-	@Test(priority = 3)
+	//@Test(priority = 3)
 	public void testHomePageTabSwitching() {
 		try {
-			boolean articleTab = hp.goToArticlesTab(driver);
+			boolean articleTab = hp.goToArticlesTab();
 			if (articleTab == true) {
 				test.log(LogStatus.PASS, "User switched to Articles tab sucessfully");
 
-				boolean questionsTab = hp.goToQuestionsTab(driver);
+				boolean questionsTab = hp.goToQuestionsTab();
 				if (questionsTab == true) {
 					test.log(LogStatus.PASS, "User switched to Questions tab successfully");
 				} else {
@@ -99,6 +100,28 @@ public class TestHomePage extends MyListener {
 		}
 	}
 
+	
+	@Test
+	public void testEditDraftCancel() throws Exception{
+		if(utilityFunctions.checkElementExistence(Locators.userProfileIcon)!=true){
+			hp.remainLoginMobiControl(TestData.correctUserName , TestData.correctPassword);
+			utilityFunctions.checkElementExistence(Locators.userProfileIcon);
+		}
+		hp.createAnswerDraft();
+		hp.cancelEditDraft();
+		if(hp.answerButtonForFirstTopic.getText().contains("Edit Draft")){
+			test.log(LogStatus.PASS, "Edit Draft option present");
+		}else{
+			test.log(LogStatus.FAIL, "Edit Draft button is coming "+ hp.answerButtonForFirstTopic.getText());
+			Assert.fail();
+		}
+		
+		
+		
+	}
+	
+	
+	
 	// @Test
 	public void testRedirectionToCategoryPageFromQuestionsCategory() {
 

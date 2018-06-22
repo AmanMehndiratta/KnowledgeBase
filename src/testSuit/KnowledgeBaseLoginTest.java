@@ -14,6 +14,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import extentReportUtilities.MyListener;
 import knowledgeBasePages.HomePage;
 import testData.TestData;
+import utilities.utilityFunctions;
 
 public class KnowledgeBaseLoginTest extends MyListener {
 
@@ -32,14 +33,16 @@ public class KnowledgeBaseLoginTest extends MyListener {
 			driver.get(prop.getProperty("testSiteURL"));
 
 			// initialize all the elements of all the pages
-			//new HomePage(driver);
+			// new HomePage(driver);
+			new utilityFunctions(driver);
 			hp = PageFactory.initElements(driver, HomePage.class);
+			
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();
 
 		}
-
 	}
 
 	@Test(priority = 1)

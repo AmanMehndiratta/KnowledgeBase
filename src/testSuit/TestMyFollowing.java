@@ -12,6 +12,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import extentReportUtilities.MyListener;
 import knowledgeBasePages.MyFollowing;
+import utilities.utilityFunctions;
 
 public class TestMyFollowing extends MyListener {
 
@@ -33,6 +34,7 @@ public class TestMyFollowing extends MyListener {
 			
 			driver.get(prop.getProperty("testSiteURL"));
 			myFollowing = PageFactory.initElements(driver, MyFollowing.class);
+			new utilityFunctions(driver);
 
 		} catch (Exception e) {
 			e.printStackTrace();

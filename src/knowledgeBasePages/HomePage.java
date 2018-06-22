@@ -1,5 +1,7 @@
 package knowledgeBasePages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,7 +47,17 @@ public class HomePage {
 	@FindBy(xpath = Locators.questionsTabOnHomePage)
 	public WebElement questionsTabOnHomePage;
 
+	@FindBy(xpath = Locators.answerButtonForFirstTopic)
+	public WebElement answerButtonForFirstTopic;
+
+	@FindBy(xpath = Locators.answerTestFieldForFirstTopic)
+	public WebElement answerTestFieldForFirstTopic;
+
+	@FindBy(xpath = Locators.cancelAnswerTestFieldForFirstTopic)
+	public WebElement cancelAnswerTestFieldForFirstTopic;
+
 	public boolean loginMobiControl(String username, String password) throws Exception {
+
 		utilityFunctions.waitForElementToBeClickable(Locators.loginButton);
 		loginButton.click();
 		loginWithMobiControl.click();
@@ -84,7 +96,7 @@ public class HomePage {
 		}
 	}
 
-	public boolean goToArticlesTab(WebDriver driver) {
+	public boolean goToArticlesTab() {
 		try {
 			articlesTabOnHomePage.click();
 			return true;
@@ -94,13 +106,49 @@ public class HomePage {
 
 	}
 
-	public boolean goToQuestionsTab(WebDriver driver) {
+	public boolean goToQuestionsTab() {
 		try {
 			questionsTabOnHomePage.click();
 			return true;
 		} catch (Exception e) {
 			return false;
 		}
+	}
+
+	public boolean createAnswerDraft() {
+		try {
+			if (answerButtonForFirstTopic.getText(). contains("Answer")) {
+				answerButtonForFirstTopic.click();
+				//utilityFunctions.waitForElementToBeClickable(Locators.answerTestFieldForFirstTopic);
+				//driver.findElement(By.xpath(Locators.answerTestFieldForFirstTopic)).click();
+				//driver.findElement(By.xpath(Locators.answerTestFieldForFirstTopic)).sendKeys("Random text");
+				driver.switchTo().frame("PostContent_ifr");
+				driver.findElement(By.xpath(Locators.answerTestFieldForFirstTopic)).click();
+				driver.findElement(By.xpath(Locators.answerTestFieldForFirstTopic)).sendKeys("random text");
+				//driver.switchTo().defaultContent();
+				
+				//answerTestFieldForFirstTopic.click();
+				//answerTestFieldForFirstTopic.sendKeys("Random text");
+				answerButtonForFirstTopic.click();
+			}
+
+		} catch (Exception e) {
+			return false;
+		}
+
+		return true;
+
+	}
+
+	public boolean cancelEditDraft() {
+		try {
+			answerButtonForFirstTopic.click();
+			cancelAnswerTestFieldForFirstTopic.click();
+		} catch (Exception e) {
+			return false;
+		}
+		return true;
+
 	}
 
 }
