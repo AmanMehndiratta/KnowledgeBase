@@ -28,7 +28,7 @@ public class Locators {
 	public static final String firstTopicOnHomePage = "/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[1]/h4/a";
 
 	//Topic Detail screen
-	public static final String answerButtonOnFirstTopicDetail = "/html/body/main/div[1]/div/div[4]/div[6]/div/ul/li[1]/font[1]/a";
+	public static final String answerButtonOnFirstTopicDetail = "/html/body/main/div[1]/div/div[4]/div[6]/div/ul/li[1]/font[1]";
 	public static final String answerButtonOnTopicDetailScreen = "/html/body/main/div[1]/div/div[4]/div[6]/div/ul/li[1]/font[1]/a";
 	public static final String answerTestFieldForFirstTopicOnTopicDetailScreen = "//*[@id='tinymce']";
 	public static final String cancelAnswerTestFieldForFirstTopicOnTopicDetailScreen = "//*[@id='postcodeform']/div/div[2]/a";

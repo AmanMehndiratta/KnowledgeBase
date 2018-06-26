@@ -55,6 +55,7 @@ public class TestTopicDetails extends MyListener{
 			driver.navigate().to(prop.getProperty("testSiteURL"));
 		}
 		hp.goToFirstTopicDetail();
+		test.log(LogStatus.INFO, "User redirected to first topic");
 		topicDetail.createAnswerDraftOnTopicDetail();
 		topicDetail.cancelEditDraftOnTopicDetail();
 		test.log(LogStatus.INFO, "Edit Draft Created");

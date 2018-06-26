@@ -112,6 +112,7 @@ public class HomePage {
 
 	public boolean goToQuestionsTab() {
 		try {
+			utilityFunctions.waitForElementToBeClickable(Locators.questionsTabOnHomePage);
 			questionsTabOnHomePage.click();
 			return true;
 		} catch (Exception e) {
@@ -153,7 +154,9 @@ public class HomePage {
 
 	public boolean goToFirstTopicDetail() {
 		try {
+			
 			goToQuestionsTab();
+			utilityFunctions.waitForElementToBeClickable(Locators.firstTopicOnHomePage);
 			firstTopicOnHomePage.click();
 			utilityFunctions.waitForElementToBeClickable(Locators.answerButtonOnFirstTopicDetail);
 			return true;

@@ -17,7 +17,7 @@ public class utilityFunctions {
 	// public static WebDriver driver;
 
 	public static void waitForElementToBeClickable(String elementXpath) {
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(elementXpath)));
 
 	}

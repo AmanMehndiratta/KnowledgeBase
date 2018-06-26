@@ -6,10 +6,15 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
+      <class name="testSuit.TestHomePage">
+        <methods>
+          <include name="testEditDraftCancelOnHomePage"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- testSuit.TestHomePage -->
       <class name="testSuit.TestTopicDetails">
         <methods>
           <include name="setupTest"/>
-          <include name="testEditDraftCancelOnTopicDetailPage"/>
         </methods>
       </class> <!-- testSuit.TestTopicDetails -->
     </classes>

@@ -14,13 +14,13 @@ public class TopicDetails {
 		this.driver = driver;
 	}
 	
-	@FindBy(xpath = "answerButtonOnTopicDetailScreen")
+	@FindBy(xpath = Locators.answerButtonOnTopicDetailScreen)
 	public WebElement answerButtonOnTopicDetailScreen;
 	
-	@FindBy(xpath = "answerTestFieldForFirstTopicOnTopicDetailScreen")
+	@FindBy(xpath = Locators.answerTestFieldForFirstTopicOnTopicDetailScreen)
 	public WebElement answerTestFieldForFirstTopicOnTopicDetailScreen;
 	
-	@FindBy(xpath = "cancelAnswerTestFieldForFirstTopicOnTopicDetailScreen")
+	@FindBy(xpath = Locators.cancelAnswerTestFieldForFirstTopicOnTopicDetailScreen)
 	public WebElement cancelAnswerTestFieldForFirstTopicOnTopicDetailScreen;
 	
 	
@@ -31,7 +31,9 @@ public class TopicDetails {
 				driver.switchTo().frame("PostContent_ifr");
 				answerTestFieldForFirstTopicOnTopicDetailScreen.click();
 				answerTestFieldForFirstTopicOnTopicDetailScreen.sendKeys("random text");
-				driver.navigate().to(driver.getCurrentUrl());
+				answerTestFieldForFirstTopicOnTopicDetailScreen.click();
+				 driver.switchTo().defaultContent();
+				//driver.navigate().to(driver.getCurrentUrl());
 			}
 		} catch (Exception e) {
 			return false;

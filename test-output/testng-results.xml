@@ -1,55 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="137952" started-at="2018-06-22T15:04:19Z" finished-at="2018-06-22T15:06:37Z">
+  <suite name="Suite" duration-ms="28190" started-at="2018-06-26T09:43:18Z" finished-at="2018-06-26T09:43:46Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="137952" started-at="2018-06-22T15:04:19Z" finished-at="2018-06-22T15:06:37Z">
+    <test name="Test" duration-ms="28190" started-at="2018-06-26T09:43:18Z" finished-at="2018-06-26T09:43:46Z">
       <class name="testSuit.TestTopicDetails">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestTopicDetails@9353778]" name="setupTest" is-config="true" duration-ms="66536" started-at="2018-06-22T20:34:25Z" finished-at="2018-06-22T20:35:32Z">
+        <test-method status="PASS" signature="testEditDraftCancelOnTopicDetailPage()[pri:0, instance:testSuit.TestTopicDetails@6a41eaa2]" name="testEditDraftCancelOnTopicDetailPage" duration-ms="5677" started-at="2018-06-26T15:13:40Z" finished-at="2018-06-26T15:13:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditDraftCancelOnTopicDetailPage -->
+      </class> <!-- testSuit.TestTopicDetails -->
+      <class name="testSuit.TestHomePage">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestHomePage@685cb137]" name="setupTest" is-config="true" duration-ms="2432" started-at="2018-06-26T15:13:23Z" finished-at="2018-06-26T15:13:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="FAIL" signature="testEditDraftCancelOnTopicDetailPage()[pri:0, instance:testSuit.TestTopicDetails@9353778]" name="testEditDraftCancelOnTopicDetailPage" duration-ms="64315" started-at="2018-06-22T20:35:32Z" finished-at="2018-06-22T20:36:36Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestTopicDetails@6a41eaa2]" name="setupTest" is-config="true" duration-ms="684" started-at="2018-06-26T15:13:25Z" finished-at="2018-06-26T15:13:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="FAIL" signature="testEditDraftCancelOnHomePage()[pri:0, instance:testSuit.TestHomePage@685cb137]" name="testEditDraftCancelOnHomePage" duration-ms="14176" started-at="2018-06-26T15:13:26Z" finished-at="2018-06-26T15:13:40Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unable to locate element: /html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[2]/div/ul/li[1]/a
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'IND157', ip: '10.0.225.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8104, moz:profile: C:\Users\amehndiratta\AppDa..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 1bf2d281-70b0-40b5-9398-6afc992c72d7
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[2]/div/ul/li[1]/a}]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[2]/div/ul/li[1]/a
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'IND157', ip: '10.0.225.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8104, moz:profile: C:\Users\amehndiratta\AppDa..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 1bf2d281-70b0-40b5-9398-6afc992c72d7
-*** Element info: {Using=xpath, value=/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[2]/div/ul/li[1]/a}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getText(Unknown Source)
-	at testSuit.TestTopicDetails.testEditDraftCancelOnTopicDetailPage(TestTopicDetails.java:65)
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at testSuit.TestHomePage.testEditDraftCancelOnHomePage(TestHomePage.java:118)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -76,11 +57,11 @@ Session ID: 1bf2d281-70b0-40b5-9398-6afc992c72d7
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEditDraftCancelOnTopicDetailPage -->
-      </class> <!-- testSuit.TestTopicDetails -->
+        </test-method> <!-- testEditDraftCancelOnHomePage -->
+      </class> <!-- testSuit.TestHomePage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
