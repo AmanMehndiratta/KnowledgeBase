@@ -24,6 +24,7 @@ public class TestTopicDetails extends MyListener{
 	Properties prop = new Properties();
 	HomePage hp;
 	TopicDetails topicDetail;
+	utilityFunctions utility;
 
 	@BeforeTest
 	public void setupTest() {
@@ -39,7 +40,7 @@ public class TestTopicDetails extends MyListener{
 			// initialize all the elements of all the pages
 			hp = PageFactory.initElements(driver, HomePage.class);
 			topicDetail = PageFactory.initElements(driver, TopicDetails.class);
-			new utilityFunctions(driver);
+			utility = new utilityFunctions(driver);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -48,12 +49,7 @@ public class TestTopicDetails extends MyListener{
 	
 	@Test
 	public void testEditDraftCancelOnTopicDetailPage() throws Exception {
-		if (utilityFunctions.checkElementExistence(Locators.userProfileIcon) != true) {
-			hp.remainLoginMobiControl(TestData.correctUserName, TestData.correctPassword);
-			utilityFunctions.checkElementExistence(Locators.userProfileIcon);
-		}else{
-			driver.navigate().to(prop.getProperty("testSiteURL"));
-		}
+		utility.loginUserIfNotLoggedIn(hp);
 		hp.goToFirstTopicDetail();
 		test.log(LogStatus.INFO, "User redirected to first topic");
 		topicDetail.createAnswerDraftOnTopicDetail();

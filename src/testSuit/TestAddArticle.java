@@ -7,15 +7,12 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
 import extentReportUtilities.MyListener;
 import knowledgeBasePages.ArticleDetails;
 import knowledgeBasePages.HomePage;
-import testData.TestData;
-import utilities.Locators;
 import utilities.utilityFunctions;
 
 public class TestAddArticle extends MyListener {
@@ -23,6 +20,7 @@ public class TestAddArticle extends MyListener {
 	Properties prop = new Properties();
 	ArticleDetails articles;
 	HomePage hp;
+	utilityFunctions utility;
 
 	@BeforeTest
 	public void setupTest() {
@@ -35,7 +33,7 @@ public class TestAddArticle extends MyListener {
 
 			driver.get(prop.getProperty("testSiteURL"));
 			articles = PageFactory.initElements(driver, ArticleDetails.class);
-			new utilityFunctions(driver);
+			utility = new utilityFunctions(driver);
 			hp = PageFactory.initElements(driver, HomePage.class);
 
 		} catch (Exception e) {
@@ -47,10 +45,7 @@ public class TestAddArticle extends MyListener {
 	
 	//@Test
 	public void addArticle() throws Exception{
-		if(utilityFunctions.checkElementExistence(Locators.userProfileIcon)!=true){
-			hp.remainLoginMobiControl(TestData.correctUserName , TestData.correctPassword);
-			utilityFunctions.checkElementExistence(Locators.userProfileIcon);
-		}
+		utility.loginUserIfNotLoggedIn(hp);
 		
 		if(articles.addArticleWithCorrectData()==true){
 			test.log(LogStatus.PASS, "Article Added successfully");

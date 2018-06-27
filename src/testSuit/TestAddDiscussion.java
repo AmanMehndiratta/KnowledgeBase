@@ -17,6 +17,7 @@ public class TestAddDiscussion extends MyListener{
 	//ExtentReportUtility report;
 	//ExtentReports extent;
 	Properties prop = new Properties();
+	utilityFunctions utility;
 
 	@BeforeTest
 	public void setupTest() {
@@ -27,7 +28,7 @@ public class TestAddDiscussion extends MyListener{
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/utilities/OR.properties");
 			prop.load(fis);
 			driver.get(prop.getProperty("testSiteURL"));
-			new utilityFunctions(driver);
+			utility = new utilityFunctions(driver);
 
 		} catch (Exception e) {
 			e.printStackTrace();

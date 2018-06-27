@@ -1,14 +1,21 @@
 package utilities;
 
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import knowledgeBasePages.HomePage;
+import testData.TestData;
+
 public class utilityFunctions {
 
 	static WebDriver driver;
+	//HomePage hp;
+	Properties prop;
 
 	public utilityFunctions(WebDriver driver) {
 		utilityFunctions.driver = driver;
@@ -36,7 +43,7 @@ public class utilityFunctions {
 		try {
 			checkElementExistence(elementXpath);
 			String actualText = driver.findElement(By.xpath(elementXpath)).getText();
-			if (actualText == expectedText) {
+			if (actualText.contains(expectedText)) {
 				return true;
 			} else {
 				return false;
@@ -44,6 +51,34 @@ public class utilityFunctions {
 		} catch (Exception e) {
 			return false;
 		}
+	}
+	
+	public void loginUserIfNotLoggedIn(HomePage hp) throws Exception{
+		if (checkElementExistence(Locators.userProfileIcon) != true) {
+			hp.remainLoginMobiControl(TestData.correctUserName, TestData.correctPassword);
+			checkElementExistence(Locators.userProfileIcon);
+		} else {
+			driver.navigate().to(prop.getProperty("testSiteURL"));
+		}
+	}
+	
+	public boolean logoutUser(HomePage hp){
+		try{
+			if (checkElementExistence(Locators.userProfileIcon) == true) {
+				//driver.navigate().to(prop.getProperty("testSiteURL"));
+				if(checkElementExistence(Locators.logoutButton) != true){
+					hp.userProfileIcon.click();
+				}
+				hp.logoutLoggedInUser();
+				return true;
+			}else{
+				return false;
+			}
+		}catch(Exception e){
+			return false;
+		}
+		
+		
 	}
 
 }

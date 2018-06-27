@@ -7,6 +7,6 @@ public class TestData {
 	public static final String incorrectPassword = "password";
 	
 	//HomePage Text
-	public static final String homePageTitle = "Ask a question, find answers";
+	public static final String homePageTitle = "Ask questions, find answers";
 	
 }

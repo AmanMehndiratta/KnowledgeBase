@@ -22,13 +22,11 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import utilities.utilityFunctions;
-
 public class MyListener implements ITestListener {
 
-	protected static WebDriver driver;
-	protected static ExtentReports reports;
-	protected static ExtentTest test;
+	public static WebDriver driver;
+	public static ExtentReports reports;
+	public static ExtentTest test;
 	Properties OR = new Properties();
 	
 
@@ -69,8 +67,8 @@ public class MyListener implements ITestListener {
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		System.out.println("Test Case Skipped");
-		test.log(LogStatus.SKIP, result.getMethod().getMethodName() + "test is skipped");
+		System.out.println(" Test Case Skipped");
+		test.log(LogStatus.SKIP, result.getMethod().getMethodName() +" "+ "test is skipped");
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {

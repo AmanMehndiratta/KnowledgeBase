@@ -10,7 +10,7 @@ public class Locators {
 	public static final String closeMobiControlLoginPopup = ".//*[@id='mobicontrolLogin']/div[1]/button";
 	
 	//Buttons which are uniform all across the application
-	public static final String logoutButton = ".//*[@id='header']/div/div[2]/span[3]/div[2]/div[2]/ul/li[9]/a";
+	public static final String logoutButton = "/html/body/header/nav/div/div[2]/span[3]/div[2]/div[2]/ul/li[8]/a";
 	public static final String feedbackButton = "html/body/div[12]/a";
 	public static final String userProfileIcon = ".//*[@id='user-manage-section']/div"; 
 	
@@ -26,6 +26,7 @@ public class Locators {
 	public static final String cancelAnswerTestFieldForFirstTopic = "/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[4]/div/form/div/div[3]/button";
 	public static final String whiteSpaceForFirstAnswerTextField = "/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[4]/div/form/div/div[3]";
 	public static final String firstTopicOnHomePage = "/html/body/main/div/div/div[2]/div[4]/div/div[1]/div[2]/div[1]/h4/a";
+	public static final String pendingPostsScreen = "/html/body/header/nav/div/div[2]/span[3]/div[2]/div[2]/ul/li[7]/a111";
 
 	//Topic Detail screen
 	public static final String answerButtonOnFirstTopicDetail = "/html/body/main/div[1]/div/div[4]/div[6]/div/ul/li[1]/font[1]";
@@ -53,7 +54,8 @@ public class Locators {
 	public static final String mobiControlArticleCategoryDropdown = ".//*[@id='articlecreator']/div[4]/div/div/ul/li[2]/a/span[1]";
 
 
-
+	//Pending posts screen
+	public static final String approveFirstTopicOnPendingPostsScreen = "/html/body/main/div/div/div[5]/div[2]/div/div/div[1]/div/div/div/div[2]/div[2]/div/ul/li[1]/a";
 	
 
 }

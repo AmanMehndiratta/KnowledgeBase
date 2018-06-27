@@ -21,6 +21,7 @@ public class TestHomePage extends MyListener {
 
 	Properties prop = new Properties();
 	HomePage hp;
+	utilityFunctions utility;
 
 	@BeforeTest
 	public void setupTest() {
@@ -35,14 +36,14 @@ public class TestHomePage extends MyListener {
 
 			// initialize all the elements of all the pages
 			hp = PageFactory.initElements(driver, HomePage.class);
-			new utilityFunctions(driver);
+			utility = new utilityFunctions(driver);
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	// @Test(priority = 1)
+	@Test(priority = 1)
 	public void testExistenceOfFeedbackButton() {
 		// boolean exist = true;
 		try {
@@ -60,7 +61,7 @@ public class TestHomePage extends MyListener {
 		}
 	}
 
-	// @Test(priority = 2)
+	@Test(priority = 2)
 	public void validateHomePageTitle() {
 		// boolean text = true;
 		try {
@@ -75,7 +76,7 @@ public class TestHomePage extends MyListener {
 		}
 	}
 
-	// @Test(priority = 3)
+	@Test(priority = 3)
 	public void testHomePageTabSwitching() {
 		try {
 			boolean articleTab = hp.goToArticlesTab();
@@ -100,14 +101,9 @@ public class TestHomePage extends MyListener {
 		}
 	}
 
-	@Test
+	@Test(priority = 4)
 	public void testEditDraftCancelOnHomePage() throws Exception {
-		if (utilityFunctions.checkElementExistence(Locators.userProfileIcon) != true) {
-			hp.remainLoginMobiControl(TestData.correctUserName, TestData.correctPassword);
-			utilityFunctions.checkElementExistence(Locators.userProfileIcon);
-		}else{
-			driver.navigate().to(prop.getProperty("testSiteURL"));
-		}
+		utility.loginUserIfNotLoggedIn(hp);
 		hp.createAnswerDraft();
 		test.log(LogStatus.INFO, "Edit Draft Created");
 

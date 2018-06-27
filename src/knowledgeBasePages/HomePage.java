@@ -60,6 +60,9 @@ public class HomePage {
 	@FindBy(xpath = Locators.firstTopicOnHomePage)
 	public WebElement firstTopicOnHomePage;
 
+	@FindBy(xpath = Locators.pendingPostsScreen)
+	public WebElement pendingPostsScreen;
+
 	public boolean loginMobiControl(String username, String password) throws Exception {
 
 		utilityFunctions.waitForElementToBeClickable(Locators.loginButton);
@@ -73,6 +76,7 @@ public class HomePage {
 		try {
 			utilityFunctions.waitForElementToBeClickable(Locators.userProfileIcon);
 			userProfileIcon.click();
+			utilityFunctions.waitForElementToBeClickable(Locators.logoutButton);
 			logoutButton.click();
 			return true;
 		} catch (Exception e) {
@@ -154,7 +158,7 @@ public class HomePage {
 
 	public boolean goToFirstTopicDetail() {
 		try {
-			
+
 			goToQuestionsTab();
 			utilityFunctions.waitForElementToBeClickable(Locators.firstTopicOnHomePage);
 			firstTopicOnHomePage.click();
@@ -164,6 +168,32 @@ public class HomePage {
 			return false;
 		}
 
+	}
+
+	public boolean goToPendingPosts() {
+		try {
+			userProfileIcon.click();
+			if (utilityFunctions.checkElementExistence(Locators.pendingPostsScreen) == true) {
+				pendingPostsScreen.click();
+				return true;
+			} else {
+				return false;
+			}
+		} catch (Exception e) {
+			return false;
+		}
+
+	}
+	
+	public boolean logoutLoggedInUser(){
+		try{
+			
+			userProfileIcon.click();
+			logoutButton.click();
+			return true;
+		}catch(Exception e){
+			return false;
+		}
 	}
 
 }

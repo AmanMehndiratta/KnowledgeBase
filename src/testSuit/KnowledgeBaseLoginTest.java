@@ -20,6 +20,7 @@ public class KnowledgeBaseLoginTest extends MyListener {
 
 	Properties prop = new Properties();
 	HomePage hp;
+	utilityFunctions utility;
 
 	@BeforeTest
 	public void setupTest() {
@@ -36,9 +37,8 @@ public class KnowledgeBaseLoginTest extends MyListener {
 			// new HomePage(driver);
 			new utilityFunctions(driver);
 			hp = PageFactory.initElements(driver, HomePage.class);
+			utility = new utilityFunctions(driver);
 			
-			
-
 		} catch (Exception e) {
 			e.printStackTrace();
 
@@ -48,7 +48,7 @@ public class KnowledgeBaseLoginTest extends MyListener {
 	@Test(priority = 1)
 	public void testLoginWithValidCredentialsInMobiControl() {
 		try {
-
+			utility.logoutUser(hp);
 			if (hp.loginMobiControl(TestData.correctUserName, TestData.correctPassword) == true) {
 				test.log(LogStatus.PASS, "User logging in");
 			} else {
@@ -65,6 +65,7 @@ public class KnowledgeBaseLoginTest extends MyListener {
 	@Test(priority = 2)
 	public void testLoginWithInvalidCrerdentialsInMobicontrol() {
 		try {
+			utility.logoutUser(hp);
 			if (hp.loginMobiControl(TestData.incorrectUsername, TestData.incorrectPassword) == false) {
 				test.log(LogStatus.PASS, "User not allowed to login with invalid credentials");
 			} else {

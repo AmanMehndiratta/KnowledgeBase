@@ -13,18 +13,14 @@ import extentReportUtilities.MyListener;
 import junit.framework.Assert;
 import knowledgeBasePages.ArticleDetails;
 import knowledgeBasePages.HomePage;
-import testData.TestData;
-import utilities.Locators;
 import utilities.utilityFunctions;
 
-public class TestArticleDetails extends MyListener{
+public class TestArticleDetails extends MyListener {
 
 	Properties prop = new Properties();
 	ArticleDetails articleDetail;
 	HomePage hp;
-	
-	
-
+	utilityFunctions utility;
 
 	@BeforeTest
 	public void setupTest() {
@@ -39,7 +35,7 @@ public class TestArticleDetails extends MyListener{
 
 			// initialize all the elements of all the pages
 			articleDetail = PageFactory.initElements(driver, ArticleDetails.class);
-			new utilityFunctions(driver);
+			utility = new utilityFunctions(driver);
 			hp = PageFactory.initElements(driver, HomePage.class);
 
 		} catch (Exception e) {
@@ -48,30 +44,23 @@ public class TestArticleDetails extends MyListener{
 		}
 
 	}
-	
-	
-	//@Test
-	//need to remove this test as it is very hard to manage xpaths of same articles etc
-	public void testPresenceOfArticleHelpfulPercentageAfterVotingYes() throws Exception{
-		if(utilityFunctions.checkElementExistence(Locators.userProfileIcon)!=true){
-			hp.remainLoginMobiControl(TestData.correctUserName , TestData.correctPassword);
-			utilityFunctions.checkElementExistence(Locators.userProfileIcon);
-		}
-		try{
-		articleDetail.voteArticleWasHelpful();
-		if(articleDetail.presenceOfPercentArticleWasHelpful(driver) == true){
-			test.log(LogStatus.PASS, "% of article is present after voting Yes");
-		}else{
-			Assert.fail();
-			test.log(LogStatus.FAIL, "% of article is not present after voting Yes");
-		}
-		}catch(Exception e){
+
+	// @Test
+	// need to remove this test as it is very hard to manage xpaths of same
+	// articles etc
+	public void testPresenceOfArticleHelpfulPercentageAfterVotingYes() throws Exception {
+		utility.loginUserIfNotLoggedIn(hp);
+		try {
+			articleDetail.voteArticleWasHelpful();
+			if (articleDetail.presenceOfPercentArticleWasHelpful(driver) == true) {
+				test.log(LogStatus.PASS, "% of article is present after voting Yes");
+			} else {
+				Assert.fail();
+				test.log(LogStatus.FAIL, "% of article is not present after voting Yes");
+			}
+		} catch (Exception e) {
 			Assert.fail("Test Case Failed due to following reason" + e);
 		}
 	}
 
-	
-	
-	
-	
 }
