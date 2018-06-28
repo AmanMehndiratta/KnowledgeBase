@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 27 12:44:00 IST 2018</td>
+<td>Started on:</td><td>Thu Jun 28 19:16:16 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>82 seconds (82469 ms)</td>
+<tr><td>Total time:</td><td>74 seconds (74372 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,47 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='testSuit.TestPendingPosts.testApproveFirstTopicFromPendingPostsScreen()'><b>testApproveFirstTopicFromPendingPostsScreen</b><br>Test class: testSuit.TestPendingPosts</td>
+<td><div><pre>java.lang.NullPointerException
+	at utilities.utilityFunctions.loginUserIfNotLoggedIn(utilityFunctions.java:61)
+	at testSuit.TestPendingPosts.testApproveFirstTopicFromPendingPostsScreen(TestPendingPosts.java:59)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1844334363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1844334363'><pre>java.lang.NullPointerException
+	at utilities.utilityFunctions.loginUserIfNotLoggedIn(utilityFunctions.java:61)
+	at testSuit.TestPendingPosts.testApproveFirstTopicFromPendingPostsScreen(TestPendingPosts.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testSuit.TestPendingPosts@7d9d1a19</td></tr>
+<tr>
 <td title='testSuit.TestHomePage.testEditDraftCancelOnHomePage()'><b>testEditDraftCancelOnHomePage</b><br>Test class: testSuit.TestHomePage</td>
 <td><div><pre>java.lang.AssertionError: null
 	at testSuit.TestHomePage.testEditDraftCancelOnHomePage(TestHomePage.java:114)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace288379405", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace288379405'><pre>java.lang.AssertionError: null
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1856158867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1856158867'><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.fail(Assert.java:101)
 	at testSuit.TestHomePage.testEditDraftCancelOnHomePage(TestHomePage.java:114)
@@ -108,8 +144,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>18</td>
-<td>testSuit.TestHomePage@5622fdf</td></tr>
+<td>23</td>
+<td>testSuit.TestHomePage@4883b407</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -122,69 +158,27 @@ function toggleAllBoxes() {
 <td title='testSuit.TestHomePage.testExistenceOfFeedbackButton()'><b>testExistenceOfFeedbackButton</b><br>Test class: testSuit.TestHomePage</td>
 <td></td>
 <td>0</td>
-<td>testSuit.TestHomePage@5622fdf</td></tr>
+<td>testSuit.TestHomePage@4883b407</td></tr>
 <tr>
 <td title='testSuit.TestHomePage.testHomePageTabSwitching()'><b>testHomePageTabSwitching</b><br>Test class: testSuit.TestHomePage</td>
 <td></td>
 <td>0</td>
-<td>testSuit.TestHomePage@5622fdf</td></tr>
+<td>testSuit.TestHomePage@4883b407</td></tr>
 <tr>
 <td title='testSuit.KnowledgeBaseLoginTest.testLoginWithInvalidCrerdentialsInMobicontrol()'><b>testLoginWithInvalidCrerdentialsInMobicontrol</b><br>Test class: testSuit.KnowledgeBaseLoginTest</td>
 <td></td>
 <td>21</td>
-<td>testSuit.KnowledgeBaseLoginTest@6093dd95</td></tr>
+<td>testSuit.KnowledgeBaseLoginTest@5622fdf</td></tr>
 <tr>
 <td title='testSuit.KnowledgeBaseLoginTest.testLoginWithValidCredentialsInMobiControl()'><b>testLoginWithValidCredentialsInMobiControl</b><br>Test class: testSuit.KnowledgeBaseLoginTest</td>
 <td></td>
-<td>4</td>
-<td>testSuit.KnowledgeBaseLoginTest@6093dd95</td></tr>
+<td>14</td>
+<td>testSuit.KnowledgeBaseLoginTest@5622fdf</td></tr>
 <tr>
 <td title='testSuit.TestHomePage.validateHomePageTitle()'><b>validateHomePageTitle</b><br>Test class: testSuit.TestHomePage</td>
 <td></td>
 <td>0</td>
-<td>testSuit.TestHomePage@5622fdf</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testSuit.TestPendingPosts.testApproveFirstTopicFromPendingPostsScreen()'><b>testApproveFirstTopicFromPendingPostsScreen</b><br>Test class: testSuit.TestPendingPosts</td>
-<td><div><pre>org.testng.SkipException: No Pending Posts present
-	at testSuit.TestPendingPosts.testApproveFirstTopicFromPendingPostsScreen(TestPendingPosts.java:62)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace381708767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace381708767'><pre>org.testng.SkipException: No Pending Posts present
-	at testSuit.TestPendingPosts.testApproveFirstTopicFromPendingPostsScreen(TestPendingPosts.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>23</td>
-<td>testSuit.TestPendingPosts@6d4b1c02</td></tr>
+<td>testSuit.TestHomePage@4883b407</td></tr>
 </table><p>
 </body>
 </html>

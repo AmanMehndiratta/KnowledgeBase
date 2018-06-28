@@ -6,23 +6,23 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="testSuit.TestPendingPosts">
-        <methods>
-          <include name="testApproveFirstTopicFromPendingPostsScreen"/>
-          <include name="setupTest"/>
-        </methods>
-      </class> <!-- testSuit.TestPendingPosts -->
-      <class name="testSuit.KnowledgeBaseLoginTest">
-        <methods>
-          <include name="setupTest"/>
-        </methods>
-      </class> <!-- testSuit.KnowledgeBaseLoginTest -->
       <class name="testSuit.TestHomePage">
         <methods>
           <include name="testEditDraftCancelOnHomePage"/>
           <include name="setupTest"/>
         </methods>
       </class> <!-- testSuit.TestHomePage -->
+      <class name="testSuit.KnowledgeBaseLoginTest">
+        <methods>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- testSuit.KnowledgeBaseLoginTest -->
+      <class name="testSuit.TestPendingPosts">
+        <methods>
+          <include name="testApproveFirstTopicFromPendingPostsScreen"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- testSuit.TestPendingPosts -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="7" passed="5">
+<testng-results skipped="0" failed="2" total="7" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="82469" started-at="2018-06-27T07:14:00Z" finished-at="2018-06-27T07:15:23Z">
+  <suite name="Suite" duration-ms="74372" started-at="2018-06-28T13:46:16Z" finished-at="2018-06-28T13:47:30Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="82469" started-at="2018-06-27T07:14:00Z" finished-at="2018-06-27T07:15:23Z">
+    <test name="Test" duration-ms="74372" started-at="2018-06-28T13:46:16Z" finished-at="2018-06-28T13:47:30Z">
       <class name="testSuit.TestPendingPosts">
-        <test-method status="SKIP" signature="testApproveFirstTopicFromPendingPostsScreen()[pri:0, instance:testSuit.TestPendingPosts@6d4b1c02]" name="testApproveFirstTopicFromPendingPostsScreen" duration-ms="23835" started-at="2018-06-27T12:44:13Z" finished-at="2018-06-27T12:44:37Z">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[No Pending Posts present]]>
-            </message>
+        <test-method status="FAIL" signature="testApproveFirstTopicFromPendingPostsScreen()[pri:0, instance:testSuit.TestPendingPosts@7d9d1a19]" name="testApproveFirstTopicFromPendingPostsScreen" duration-ms="260" started-at="2018-06-28T19:17:30Z" finished-at="2018-06-28T19:17:30Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: No Pending Posts present
-	at testSuit.TestPendingPosts.testApproveFirstTopicFromPendingPostsScreen(TestPendingPosts.java:62)
+              <![CDATA[java.lang.NullPointerException
+	at utilities.utilityFunctions.loginUserIfNotLoggedIn(utilityFunctions.java:61)
+	at testSuit.TestPendingPosts.testApproveFirstTopicFromPendingPostsScreen(TestPendingPosts.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -41,47 +39,47 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApproveFirstTopicFromPendingPostsScreen -->
       </class> <!-- testSuit.TestPendingPosts -->
       <class name="testSuit.KnowledgeBaseLoginTest">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@6093dd95]" name="setupTest" is-config="true" duration-ms="6354" started-at="2018-06-27T12:44:05Z" finished-at="2018-06-27T12:44:11Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.KnowledgeBaseLoginTest@5622fdf]" name="setupTest" is-config="true" duration-ms="7040" started-at="2018-06-28T19:16:21Z" finished-at="2018-06-28T19:16:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestHomePage@5622fdf]" name="setupTest" is-config="true" duration-ms="858" started-at="2018-06-27T12:44:11Z" finished-at="2018-06-27T12:44:12Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestHomePage@4883b407]" name="setupTest" is-config="true" duration-ms="842" started-at="2018-06-28T19:16:28Z" finished-at="2018-06-28T19:16:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestPendingPosts@6d4b1c02]" name="setupTest" is-config="true" duration-ms="1132" started-at="2018-06-27T12:44:12Z" finished-at="2018-06-27T12:44:13Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:testSuit.TestPendingPosts@7d9d1a19]" name="setupTest" is-config="true" duration-ms="1151" started-at="2018-06-28T19:16:29Z" finished-at="2018-06-28T19:16:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="testLoginWithValidCredentialsInMobiControl()[pri:1, instance:testSuit.KnowledgeBaseLoginTest@6093dd95]" name="testLoginWithValidCredentialsInMobiControl" duration-ms="4941" started-at="2018-06-27T12:44:37Z" finished-at="2018-06-27T12:44:42Z">
+        <test-method status="PASS" signature="testLoginWithValidCredentialsInMobiControl()[pri:1, instance:testSuit.KnowledgeBaseLoginTest@5622fdf]" name="testLoginWithValidCredentialsInMobiControl" duration-ms="14275" started-at="2018-06-28T19:16:30Z" finished-at="2018-06-28T19:16:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithValidCredentialsInMobiControl -->
-        <test-method status="PASS" signature="testLoginWithInvalidCrerdentialsInMobicontrol()[pri:2, instance:testSuit.KnowledgeBaseLoginTest@6093dd95]" name="testLoginWithInvalidCrerdentialsInMobicontrol" duration-ms="21665" started-at="2018-06-27T12:44:42Z" finished-at="2018-06-27T12:45:03Z">
+        <test-method status="PASS" signature="testLoginWithInvalidCrerdentialsInMobicontrol()[pri:2, instance:testSuit.KnowledgeBaseLoginTest@5622fdf]" name="testLoginWithInvalidCrerdentialsInMobicontrol" duration-ms="21794" started-at="2018-06-28T19:16:44Z" finished-at="2018-06-28T19:17:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCrerdentialsInMobicontrol -->
       </class> <!-- testSuit.KnowledgeBaseLoginTest -->
       <class name="testSuit.TestHomePage">
-        <test-method status="PASS" signature="testExistenceOfFeedbackButton()[pri:1, instance:testSuit.TestHomePage@5622fdf]" name="testExistenceOfFeedbackButton" duration-ms="34" started-at="2018-06-27T12:45:03Z" finished-at="2018-06-27T12:45:03Z">
+        <test-method status="PASS" signature="testExistenceOfFeedbackButton()[pri:1, instance:testSuit.TestHomePage@4883b407]" name="testExistenceOfFeedbackButton" duration-ms="54" started-at="2018-06-28T19:17:06Z" finished-at="2018-06-28T19:17:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExistenceOfFeedbackButton -->
-        <test-method status="PASS" signature="validateHomePageTitle()[pri:2, instance:testSuit.TestHomePage@5622fdf]" name="validateHomePageTitle" duration-ms="51" started-at="2018-06-27T12:45:03Z" finished-at="2018-06-27T12:45:03Z">
+        <test-method status="PASS" signature="validateHomePageTitle()[pri:2, instance:testSuit.TestHomePage@4883b407]" name="validateHomePageTitle" duration-ms="50" started-at="2018-06-28T19:17:06Z" finished-at="2018-06-28T19:17:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHomePageTitle -->
-        <test-method status="PASS" signature="testHomePageTabSwitching()[pri:3, instance:testSuit.TestHomePage@5622fdf]" name="testHomePageTabSwitching" duration-ms="534" started-at="2018-06-27T12:45:03Z" finished-at="2018-06-27T12:45:04Z">
+        <test-method status="PASS" signature="testHomePageTabSwitching()[pri:3, instance:testSuit.TestHomePage@4883b407]" name="testHomePageTabSwitching" duration-ms="608" started-at="2018-06-28T19:17:06Z" finished-at="2018-06-28T19:17:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageTabSwitching -->
-        <test-method status="FAIL" signature="testEditDraftCancelOnHomePage()[pri:4, instance:testSuit.TestHomePage@5622fdf]" name="testEditDraftCancelOnHomePage" duration-ms="18461" started-at="2018-06-27T12:45:04Z" finished-at="2018-06-27T12:45:22Z">
+        <test-method status="FAIL" signature="testEditDraftCancelOnHomePage()[pri:4, instance:testSuit.TestHomePage@4883b407]" name="testEditDraftCancelOnHomePage" duration-ms="23023" started-at="2018-06-28T19:17:07Z" finished-at="2018-06-28T19:17:30Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>

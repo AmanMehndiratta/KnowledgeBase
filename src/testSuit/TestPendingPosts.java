@@ -12,8 +12,11 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import extentReportUtilities.MyListener;
+import junit.framework.Assert;
 import knowledgeBasePages.HomePage;
 import knowledgeBasePages.PendingPosts;
+import utilities.DBConnection;
+import utilities.DatabaseQueries;
 import utilities.utilityFunctions;
 
 public class TestPendingPosts extends MyListener {
@@ -22,6 +25,8 @@ public class TestPendingPosts extends MyListener {
 	HomePage hp;
 	PendingPosts pendingPosts;
 	utilityFunctions utility;
+	DatabaseQueries dbQueries;
+	DBConnection dbConnection;
 
 	@BeforeTest
 	public void setupTest() {
@@ -38,6 +43,7 @@ public class TestPendingPosts extends MyListener {
 			hp = PageFactory.initElements(driver, HomePage.class);
 			pendingPosts = PageFactory.initElements(driver, PendingPosts.class);
 			utility = new utilityFunctions(driver);
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -46,21 +52,26 @@ public class TestPendingPosts extends MyListener {
 
 	@Test
 	public void testApproveFirstTopicFromPendingPostsScreen() throws Exception {
-		
-		utility.loginUserIfNotLoggedIn(hp);
-		if (hp.goToPendingPosts() == true) {
-			try {
-				pendingPosts.approveFirstPendingTopic();
-				test.log(LogStatus.PASS, "First topic Approved");
-			} catch (Exception e) {
-				test.log(LogStatus.ERROR, "Exception returned" + e);
+		String pendingDiscussionsCount = DBConnection.getDbConnection(DatabaseQueries.getPendingDiscussionsCount);
+		System.out.println(pendingDiscussionsCount);
+		int count = Integer.parseInt(pendingDiscussionsCount);
+		if(count > 0){
+			utility.loginUserIfNotLoggedIn(hp);
+			if (hp.goToPendingPosts() == true) {
+				try {
+					pendingPosts.approveFirstPendingTopic();
+					test.log(LogStatus.PASS, "First topic Approved");
+				} catch (Exception e) {
+					test.log(LogStatus.ERROR, "Exception returned" + e);
+				}
+
+			} else {
+				//test.log(LogStatus.ERROR, "Test Skipped");
+				test.log(LogStatus.FAIL, "No Pending Posts present");
+				Assert.fail();
 			}
-
-		} else {
-			//test.log(LogStatus.ERROR, "Test Skipped");
-			test.log(LogStatus.SKIP, "No Pending Posts present");
-			throw new SkipException("No Pending Posts present");
 		}
-
+		test.log(LogStatus.SKIP, "test case skipped as no pending discussions are found");
+		throw new SkipException("No Pending Posts present");	
 	}
 }
